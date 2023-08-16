@@ -9,12 +9,19 @@
 
 template <class T> class BlockDeque {
 
-  explicit BlockDeque(int capacity = 2000) : capacity_(capacity) {
+  explicit BlockDeque(size_t capacity = 2000) : capacity_(capacity) {
     if (capacity < 0) {
       exit(-1);
     }
   }
-  ~BlockDeque() = default;
+  ~BlockDeque() {
+    {
+      std::lock_guard<std::mutex> locker(mtx_);
+      is_closed_ = true;
+    }
+    producer_cond_.notify_all();
+    consumer_cond_.notify_all();
+  };
   void clear() {
     {
       std::lock_guard<std::mutex> locker(mtx_);
@@ -45,13 +52,13 @@ template <class T> class BlockDeque {
       return deq_.back();
     }
   }
-  int size() {
+  size_t size() {
     {
       std::lock_guard<std::mutex> locker(mtx_);
       return deq_.size();
     }
   }
-  int capacity() { return capacity_; }
+  size_t capacity() { return capacity_; }
   void push_back(const T &item) {
     {
       std::unique_lock<std::mutex> locker(mtx_);
@@ -72,18 +79,20 @@ template <class T> class BlockDeque {
     }
     consumer_cond_.notify_one();
   }
-  T pop() {
-    T tmp;
+  bool pop(T &item) {
     {
       std::unique_lock<std::mutex> locker(mtx_);
       while (deq_.empty()) {
         consumer_cond_.wait(locker);
+        if (is_closed_ == true) {
+          return false;
+        }
       }
-      tmp = deq_.front();
+      item = deq_.front();
       deq_.pop_front();
     }
     consumer_cond_.notify_one();
-    return tmp;
+    return true;
   }
 
   bool pop(T &item, int timeout) {
@@ -93,6 +102,9 @@ template <class T> class BlockDeque {
         if (consumer_cond_.wait_for(locker, std::chrono::seconds(timeout)) ==
             std::cv_status::timeout) {
           item = nullptr;
+          return false;
+        }
+        if (is_closed_ == true) {
           return false;
         }
       }
@@ -106,7 +118,8 @@ template <class T> class BlockDeque {
 private:
   std::deque<T> deq_;
   std::mutex mtx_;
-  int capacity_;
+  size_t capacity_;
+  bool is_closed_;
   std::condition_variable consumer_cond_;
   std::condition_variable producer_cond_;
 };
