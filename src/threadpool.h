@@ -8,7 +8,7 @@
 #include <thread>
 
 class ThreadPool {
-  explicit ThreadPool(size_t threadNum = 4) : pool_(std::make_shared<Pool>()) {
+  explicit ThreadPool(size_t threadNum ) : pool_(std::make_shared<Pool>()) {
 
     for (size_t i = 0; i < threadNum; i++) {
       std::thread([pool = pool_] {
