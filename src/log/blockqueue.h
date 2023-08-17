@@ -8,7 +8,7 @@
 #include <sys/time.h>
 
 template <class T> class BlockDeque {
-
+public:
   explicit BlockDeque(size_t capacity = 2000) : capacity_(capacity) {
     if (capacity < 0) {
       exit(-1);
