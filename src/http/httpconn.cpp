@@ -3,10 +3,12 @@
 #include <asm-generic/errno.h>
 #include <bits/types/struct_iovec.h>
 #include <cstring>
+#include <fcntl.h>
 #include <strings.h>
 #include <sys/epoll.h>
 #include <sys/mman.h>
 #include <sys/socket.h>
+#include <sys/stat.h>
 
 const char *OK_200_TITLE = "OK";
 const char *ERROR_400_TITLE = "Bad Request";
@@ -269,4 +271,156 @@ HttpConn::HTTP_CODE HttpConn::ProcessRead_() {
     return DoRequest_();
   }
   return ret;
+}
+// 生成相应报文
+HttpConn::HTTP_CODE HttpConn::DoRequest_() {
+  char filePath[PATH_LEN];
+  strcpy(filePath, resPath);
+  int len = strlen(resPath);
+  const char *p = strrchr(requestMsg_.url, '/');
+  char fileName[PATH_LEN];
+  switch (p[1]) {
+  case '0': {
+    strcpy(fileName, "/register.html");
+    break;
+  }
+  case '1': {
+    strcpy(fileName, "/log.html");
+    break;
+  }
+  default:
+    strcpy(fileName, requestMsg_.url);
+    break;
+  }
+  strncpy(filePath + len, fileName, PATH_LEN - len - 1);
+  if (stat(fileName, &fileStat_) < 0) {
+    return HTTP_CODE::NO_RESOURSE;
+  }
+  //  禁止其他人读
+  if (!(fileStat_.st_mode & S_IROTH)) {
+    return HTTP_CODE::FORBIDDENT_REQUEST;
+  }
+  // 要读取的文件是一个目录
+  if (S_ISDIR(fileStat_.st_mode)) {
+    return HTTP_CODE::BAD_REQUEST;
+  }
+  int fd = open(filePath, O_RDONLY);
+  fileAddr_ = (char *)mmap(0, fileStat_.st_size, PROT_READ, MAP_PRIVATE, fd, 0);
+  close(fd);
+  return HTTP_CODE::FILE_REQUEST;
+}
+
+bool HttpConn::AddResponse_(const char *format, ...) {
+  if (writeIdx_ >= WRITE_BUFF_SIZE) {
+    return false;
+  }
+  va_list args;
+  va_start(args, format);
+  size_t len = vsnprintf(writeBuff_ + writeIdx_,
+                         WRITE_BUFF_SIZE - 1 - writeIdx_, format, args);
+  if (len >= (WRITE_BUFF_SIZE - 1 - writeIdx_)) {
+    va_end(args);
+    return false;
+  }
+  writeIdx_ += len;
+  va_end(args);
+  // LOG_INFO("request:%s", writeBuff_);
+  return true;
+}
+
+// 
+bool HttpConn::AddContextType_() {
+  return AddResponse_("Context-Type:%s\r\n", "text/html");
+}
+// 添加链接状态
+bool HttpConn::AddLinger_() {
+  return AddResponse_("Connection:%s\r\n", (requestMsg_.isKeepAlive == true)
+                                               ? "keep-alive"
+                                               : "close");
+}
+// 添加空行
+bool HttpConn::AddBlinkLine_() { return AddResponse_("%s", "\r\n"); }
+
+bool HttpConn::AddStatusLine_(int status, const char *title) {
+  return AddResponse_("%d %d %s\r\n", "HTTP/1.1", status, title);
+}
+// 添加文本长度
+bool HttpConn::AddContentLength_(int len) {
+  return AddResponse_("Content-Length:%d\r\n", len);
+}
+
+// 添加消息报头，具体的添加文本长度、连接状态和空行
+bool HttpConn::AddHeader_(int len) {
+  return AddContentLength_(len) && AddLinger_() && AddBlinkLine_();
+}
+// 添加文本
+bool HttpConn::AddContent_(const char *content) {
+  return AddResponse_("%s", content);
+}
+
+bool HttpConn::ProcessWrite_(HTTP_CODE ret) {
+  bool flag;
+  switch (ret) {
+    // 内部错误
+  case HTTP_CODE::INTERNAL_ERROR: {
+    flag = (AddStatusLine_(500, ERROR_500_TITLE) &&
+            AddHeader_(strlen(ERROR_500_FORM)) && AddContent_(ERROR_500_FORM));
+    if (!flag) {
+      return false;
+    }
+  } break;
+  case HTTP_CODE::BAD_REQUEST: {
+    flag =
+        (AddStatusLine_(404, ERROR_404_TITLE) &&
+         AddHeader_(strlen(ERROR_404_TITLE)) && AddContent_(ERROR_404_TITLE));
+    if (!flag) {
+      return false;
+    }
+  } break;
+  case HTTP_CODE::FORBIDDENT_REQUEST: {
+    flag =
+        (AddStatusLine_(403, ERROR_403_TITLE) &&
+         AddHeader_(strlen(ERROR_403_TITLE)) && AddContent_(ERROR_403_TITLE));
+    if (!flag) {
+      return false;
+    }
+  } break;
+  case HTTP_CODE::FILE_REQUEST: {
+    if (fileStat_.st_size > 0) {
+      AddHeader_(fileStat_.st_size);
+      iov_[0].iov_base = writeBuff_;
+      iov_[0].iov_len = writeIdx_;
+
+      iov_[1].iov_base = fileAddr_;
+      iov_[1].iov_len = fileStat_.st_size;
+      iovCount_ = 2;
+
+      bytesTosSend_ = writeIdx_ + fileStat_.st_size;
+      return true;
+    } else {
+    }
+  }
+  default:
+    return false;
+    break;
+  }
+
+  iov_[0].iov_base = writeBuff_;
+  iov_[0].iov_len = writeIdx_;
+  iovCount_ = 1;
+  return true;
+}
+
+void HttpConn::process() {
+  HTTP_CODE readRet = ProcessRead_();
+  //请求不完整
+  if (readRet == HTTP_CODE::NO_REQUEST) {
+    epollPtr->Modify(fd_, EPOLLIN, isET);
+    return;
+  }
+
+  bool writeRet = ProcessWrite_(readRet);
+  if (!writeRet)
+    CloseConn();
+  epollPtr->Modify(fd_, EPOLLOUT, isET);
 }

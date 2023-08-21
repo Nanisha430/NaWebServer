@@ -69,6 +69,7 @@ public:
 
   static Epoll *epollPtr;
   static int userCount;
+  // 存储读取文件的名称
   static char *resPath;
   static bool isCloseLog;
   static bool isET;
@@ -130,6 +131,7 @@ private:
     bool isKeepAlive;
   } requestMsg_;
 
+  // 服务器上y映射的文件的地址
   char *fileAddr_;
   int iovCount_;
   struct stat fileStat_;
