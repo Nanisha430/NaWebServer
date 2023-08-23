@@ -11,8 +11,9 @@
 #include <thread>
 #include <sys/time.h>
 #include <string.h>
-#include <stdarg.h> // vastart va_end
+#include <stdarg.h>           // vastart va_end
 #include <assert.h>
+#include <sys/stat.h>         //mkdir
 #include "blockqueue.h"
 
 class Log 
@@ -71,5 +72,12 @@ private:
 #define LOG_INFO(format, ...) do {LOG_BASE(1, format, ##__VA_ARGS__)} while(0);
 #define LOG_WARN(format, ...) do {LOG_BASE(2, format, ##__VA_ARGS__)} while(0);
 #define LOG_ERROR(format, ...) do {LOG_BASE(3, format, ##__VA_ARGS__)} while(0);
+
+#define LOG(level, format, ...) \
+    do {\
+        Log::GetInstance()->write(level, format, ##__VA_ARGS__); \
+        Log::GetInstance()->flush();\
+    } while(0);
+
 
 #endif //LOG_H
