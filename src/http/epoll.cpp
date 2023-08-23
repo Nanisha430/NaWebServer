@@ -5,76 +5,70 @@
  */
 
 #include "epoll.h"
+#include <assert.h>
 
-Epoll::Epoll(int eventSize, int timeout):
-        eventSize_(eventSize), timeout_(timeout) {
-    epollFd_ = epoll_create(5);
-    ev_ = new epoll_event[eventSize];
+Epoll::Epoll(int eventSize, int timeout)
+    : eventSize_(eventSize), timeout_(timeout) {
+  epollFd_ = epoll_create(5);
+  ev_ = new epoll_event[eventSize];
 }
 
 Epoll::~Epoll() {
-    close(epollFd_);
-    delete[] ev_;
+  close(epollFd_);
+  delete[] ev_;
 }
 
-int Epoll::Wait() {
-    return epoll_wait(epollFd_, ev_, eventSize_, timeout_);
-}
+int Epoll::Wait() { return epoll_wait(epollFd_, ev_, eventSize_, timeout_); }
 
 void Epoll::AddFd(int fd, bool enableET, bool enableOneShot) {
-    epoll_event ev;
-    ev.data.fd = fd;
-    if (enableET)
-    {
-        ev.events = EPOLLIN || EPOLLET || EPOLLRDHUP;
-    }
-    else
-    {
-        ev.events = EPOLLIN || EPOLLRDHUP;
-    }
-    if (enableOneShot)
-    {
-        ev.events |= EPOLLONESHOT;
-    }
-    epoll_ctl(epollFd_, EPOLL_CTL_ADD, fd, &ev);
-    SetNonblock(fd);
+  assert(fd > 0);
+  epoll_event ev = {0};
+  ev.data.fd = fd;
+  if (enableET) {
+    ev.events = EPOLLIN | EPOLLET | EPOLLRDHUP;
+  } else {
+    ev.events = EPOLLIN | EPOLLRDHUP;
+  }
+  if (enableOneShot) {
+    ev.events |= EPOLLONESHOT;
+  }
+  epoll_ctl(epollFd_, EPOLL_CTL_ADD, fd, &ev);
+  SetNonblock(fd);
 }
 
 void Epoll::RemoveFd(int fd) {
-    epoll_ctl(epollFd_, EPOLL_CTL_DEL, fd, 0);
-    close(fd);
+  assert(fd > 0);
+  epoll_ctl(epollFd_, EPOLL_CTL_DEL, fd, 0);
+  close(fd);
 }
 
 void Epoll::Modify(int fd, uint32_t mode, bool enableET, bool enableOneShot) {
-    epoll_event ev;
-    ev.data.fd = fd;
-    if (enableET)
-    {
-        ev.events = mode || EPOLLET || EPOLLRDHUP;
-    }
-    else
-    {
-        ev.events = mode || EPOLLRDHUP;
-    }
-    if (enableOneShot)
-    {
-        ev.events |= EPOLLONESHOT;
-    }
-    epoll_ctl(epollFd_, EPOLL_CTL_MOD, fd, &ev);
+  assert(fd > 0);
+  epoll_event ev;
+  ev.data.fd = fd;
+  if (enableET) {
+    ev.events = mode | EPOLLET | EPOLLRDHUP;
+  } else {
+    ev.events = mode | EPOLLRDHUP;
+  }
+  if (enableOneShot) {
+    ev.events |= EPOLLONESHOT;
+  }
+  epoll_ctl(epollFd_, EPOLL_CTL_MOD, fd, &ev);
 }
 
 int Epoll::SetNonblock(int fd) {
-    return fcntl(fd, F_SETFL, fcntl(fd, F_GETFD, 0) | O_NONBLOCK);
+  return fcntl(fd, F_SETFL, fcntl(fd, F_GETFD, 0) | O_NONBLOCK);
 }
 
-int Epoll::GetFd() const {
-    return epollFd_;
-}
+int Epoll::GetFd() const { return epollFd_; }
 
 int Epoll::GetEventFd(int i) const {
-    return ev_[i].data.fd;
+  assert(i >= 0);
+  return ev_[i].data.fd;
 }
 
 uint32_t Epoll::GetEvent(int i) const {
-    return ev_[i].events;
+  assert(i >= 0);
+  return ev_[i].events;
 }
