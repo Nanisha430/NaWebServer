@@ -18,7 +18,7 @@
 #include <sys/uio.h>   // readv/writev
 #include <errno.h>     // errno
 #include <mysql/mysql.h> //mysql
-#include "epoll.h"
+#include "../server/epoll.h"
 #include "../log/log.h"
 
 class HttpConn {

@@ -92,11 +92,11 @@ void WebServer::InitHttpConn_() {
 }
 
 void WebServer::InitLog_() {
-  if (!isCloseLog_) {
-    Log::GetInstance()->init(logConfig_.path.c_str(), logConfig_.suffix.c_str(),
-                             logConfig_.buffSize, logConfig_.maxLines,
-                             logConfig_.maxQueueSize);
-  }
+  // if (!isCloseLog_) {
+  //   Log::Instance()->init(logConfig_.path.c_str(), logConfig_.suffix.c_str(),
+  //                            logConfig_.buffSize, logConfig_.maxLines,
+  //                            logConfig_.maxQueueSize);
+  // }
 }
 
 void WebServer::InitSqlPool_() {

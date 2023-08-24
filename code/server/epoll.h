@@ -2,13 +2,13 @@
  * @Author       : mark
  * @Date         : 2020-06-15
  * @copyleft GPL 2.0
- */ 
+ */
 #ifndef EPOLL_H
 #define EPOLL_H
 
 #include <sys/epoll.h> //epoll_ctl()
-#include <fcntl.h>  // fcntl()
-#include <unistd.h> // close()
+#include <fcntl.h>     // fcntl()
+#include <unistd.h>    // close()
 
 class Epoll {
 public:
@@ -41,4 +41,4 @@ private:
 
     epoll_event *ev_;
 };
-#endif //EPOLL_H
+#endif // EPOLL_H

@@ -9,13 +9,13 @@
 #include "signal.h"
 #include <unordered_map>
 
-#include "log/log.h"
-#include "timer/heaptimer.h"
-#include "pool/sqlconnpool.h"
-#include "pool/threadpool.h"
-#include "pool/sqlconnRAII.h"
-#include "http/epoll.h"
-#include "http/httpconn.h"
+#include "../log/log.h"
+#include "../timer/heaptimer.h"
+#include "../pool/sqlconnpool.h"
+#include "../pool/threadpool.h"
+#include "../pool/sqlconnRAII.h"
+#include "epoll.h"
+#include "../http/httpconn.h"
 
 class WebServer {
 public:

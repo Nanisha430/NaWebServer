@@ -1,8 +1,3 @@
-/*
- * @Author       : mark
- * @Date         : 2020-06-17
- * @copyleft GPL 2.0
- */ 
 
 #include "heaptimer.h"
 
