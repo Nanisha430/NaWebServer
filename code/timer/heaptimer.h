@@ -1,8 +1,8 @@
 /*
  * @Author       : mark
  * @Date         : 2020-06-17
- * @copyleft GPL 2.0
- */ 
+ * @copyleft Apache 2.0
+ */
 #ifndef HEAP_TIMER_H
 #define HEAP_TIMER_H
 
@@ -10,12 +10,25 @@
 #include <unordered_map>
 #include <time.h>
 #include <algorithm>
-#include <arpa/inet.h> 
-#include <functional> 
-#include <assert.h> 
+#include <arpa/inet.h>
+#include <functional>
+#include <assert.h>
+#include <chrono>
+#include "../log/log.h"
 
-typedef std::function<void()> TimerCb;
+typedef std::function<void()> TimeoutCallBack;
+typedef std::chrono::high_resolution_clock Clock;
+typedef std::chrono::milliseconds MS;
+typedef Clock::time_point TimeStamp;
 
+struct TimerNode {
+    int id;
+    TimeStamp expires;
+    TimeoutCallBack cb;
+    bool operator<(const TimerNode &t) {
+        return expires < t.expires;
+    }
+};
 class HeapTimer {
 public:
     HeapTimer() {
@@ -26,44 +39,32 @@ public:
         clear();
     }
 
-    struct TimerNode {
-        time_t expires;
-        TimerCb cbfunc;
-        size_t index;
-        int id;
-        bool operator <(const TimerNode& t) {
-            return expires < t.expires;
-        }
-    };
-    
-    bool action(int id);
-    
-    bool adjust(int id, time_t newExpires);
+    void adjust(int id, int newExpires);
 
-    int add(time_t timeSlot, TimerCb cbfunc);
+    void add(int id, int timeOut, const TimeoutCallBack &cb);
 
-    bool del(int id);
+    void doWork(int id);
 
     void clear();
 
     void tick();
 
+    void pop();
+
+    int GetNextTick();
+
 private:
-    void siftup(size_t i);
+    void del_(size_t i);
 
-    void siftdown(size_t i, size_t n);
+    void siftup_(size_t i);
 
-    void del(TimerNode* node);
+    bool siftdown_(size_t index, size_t n);
 
-    void action(TimerNode* node);
+    void SwapNode_(size_t i, size_t j);
 
-    int nextCount();
+    std::vector<TimerNode> heap_;
 
-    std::vector<TimerNode*> heap_;
-
-    std::unordered_map<int, TimerNode*> ref_;
-
-    int idCount_;
+    std::unordered_map<int, size_t> ref_;
 };
 
-#endif //HEAP_TIMER_H
+#endif // HEAP_TIMER_H

@@ -1,122 +1,74 @@
 /*
  * @Author       : mark
  * @Date         : 2020-06-17
- * @copyleft GPL 2.0
- */ 
+ * @copyleft Apache 2.0
+ */
 #ifndef WEBSERVER_H
 #define WEBSERVER_H
 
-#include "signal.h"
 #include <unordered_map>
+#include <fcntl.h>  // fcntl()
+#include <unistd.h> // close()
+#include <assert.h>
+#include <errno.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <arpa/inet.h>
 
+#include "epoller.h"
 #include "../log/log.h"
 #include "../timer/heaptimer.h"
 #include "../pool/sqlconnpool.h"
 #include "../pool/threadpool.h"
 #include "../pool/sqlconnRAII.h"
-#include "epoll.h"
 #include "../http/httpconn.h"
 
 class WebServer {
 public:
-    WebServer(int port, int sqlPort, std::string sqlUser,
-        std::string sqlPwd, std::string dbName, int connPoolNum, int threadNum,
-        int trigMode, bool isReactor, bool OptLinger ,bool isCloseLog, int logQueSize);
+    WebServer(
+        int port, int trigMode, int timeoutMS, bool OptLinger,
+        int sqlPort, const char *sqlUser, const char *sqlPwd,
+        const char *dbName, int connPoolNum, int threadNum,
+        bool openLog, int logLevel, int logQueSize);
 
     ~WebServer();
-
-    typedef std::function<void()> CallbackFunc;
-
-    void init();
-
-    void start();
-
-    bool IsCloseLog() { return isCloseLog_; }
-
-    enum class ActorMode { PROACTOR = 0, REACTOR };
-
-    struct ClientInfo {
-        HttpConn *client;
-        int timerId;
-    };
-    
-    struct LogConfig {
-        std::string path;
-        std::string suffix;
-        int buffSize;
-        int maxLines;
-        int maxQueueSize;
-    };
-    struct SqlConfig{
-        std::string host;
-        int port;
-        std::string user;
-        std::string pwd;
-        std::string dbName;
-        int connNum;
-        bool isCloseLog;
-    };
-
-    static const int MAX_FD = 65536;
-    static const int MAX_EVENT_SIZE = 10000;
-    static const time_t TIME_SLOT = 5;
-    static int pipFds_[2];
+    void Start();
 
 private:
-    void InitLog_(); 
-    void InitSqlPool_();
-    void InitSocket_();
-    void InitTrigMode_();
-    void InitHttpConn_();
-    void InitThreadPool_();
-    
-    bool DealListen_();
-    bool DealSignal_(bool &isTimeOut, bool &isClose);
-    void DealTimeOut_();
-    void DealWrite_(int fd);
-    void DealRead_(int fd);
+    bool InitSocket_();
+    void InitEventMode_(int trigMode);
+    void AddClient_(int fd, sockaddr_in addr);
 
-    void addClient_(int clientFd, sockaddr_in addr);
-    bool ExtentTime_(int timerId);
+    void DealListen_();
+    void DealWrite_(HttpConn *client);
+    void DealRead_(HttpConn *client);
 
-    static void timerCbFunc(WebServer* ins, int fd);
+    void SendError_(int fd, const char *info);
+    void ExtentTime_(HttpConn *client);
+    void CloseConn_(HttpConn *client);
 
-    static void taskWrite(HttpConn* client, SqlConnPool* connPool_, bool isReactor);
-    static void taskRead(HttpConn* client);
+    void OnRead_(HttpConn *client);
+    void OnWrite_(HttpConn *client);
+    void OnProcess(HttpConn *client);
 
-    static void SetSignal(int sig, void(handler)(int), bool enableRestart = true);
-    static void sigHandle(int sig) ;
+    static const int MAX_FD = 65536;
 
-    bool isClose_;
-    bool isCloseLog_;
-    int listenFd_;
+    static int SetFdNonblock(int fd);
+
     int port_;
-    char* resPath_;
-    int threadNum_;
+    bool openLinger_;
+    int timeoutMS_; /* 毫秒MS */
+    bool isClose_;
+    int listenFd_;
+    char *srcDir_;
 
-    int trigMode_;
-    bool isReactor_;
-    bool isOptLinger_;
-    bool isEtListen_;
-    bool isEtConn_;
+    uint32_t listenEvent_;
+    uint32_t connEvent_;
 
-    struct sockaddr_in serverAddr_;
-
-    Epoll* epoll_;
-
-    LogConfig logConfig_;
-
-    SqlConfig sqlConfig_;
-
-    SqlConnPool *connPool_;
-
-    ThreadPool* threadpool_;
-
-    HeapTimer timer_;
-
-    std::unordered_map<int, ClientInfo> clients_;
+    std::unique_ptr<HeapTimer> timer_;
+    std::unique_ptr<ThreadPool> threadpool_;
+    std::unique_ptr<Epoller> epoller_;
+    std::unordered_map<int, HttpConn> users_;
 };
 
-
-
-#endif //WEBSERVER_H
+#endif // WEBSERVER_H

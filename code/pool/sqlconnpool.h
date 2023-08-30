@@ -1,7 +1,7 @@
 /*
  * @Author       : mark
  * @Date         : 2020-06-16
- * @copyleft GPL 2.0
+ * @copyleft Apache 2.0
  */ 
 #ifndef SQLCONNPOOL_H
 #define SQLCONNPOOL_H
@@ -14,34 +14,23 @@
 #include <thread>
 #include "../log/log.h"
 
-class SqlConnPool
-{
+class SqlConnPool {
 public:
-    static SqlConnPool *GetInstance();
+    static SqlConnPool *Instance();
+
     MYSQL *GetConn();
     void FreeConn(MYSQL * conn);
     int GetFreeConnCount();
 
-    void Init(std::string host, std::string user, 
-        std::string pwd, std::string dbName,  int port, 
-        int connSize, bool isCloseLog = false);
-    
+    void Init(const char* host, int port,
+              const char* user,const char* pwd, 
+              const char* dbName, int connSize);
     void ClosePool();
-    bool IsCloseLog() { return isCloseLog_; };
 
 private:
     SqlConnPool();
     ~SqlConnPool();
 
-    struct SqlConfig {
-        std::string host;
-        std::string user;
-        std::string pwd;
-        std::string dbName;
-        int port;
-    } sqlConfig_;
-
-    bool isCloseLog_;
     int MAX_CONN_;
     int useCount_;
     int freeCount_;
