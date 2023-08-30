@@ -21,8 +21,8 @@ public:
     ~HttpResponse();
 
     void Init(const std::string& srcDir, std::string& path, bool isKeepAlive = false, int code = -1);
-    void MakeResponse(Buffer& buff);
     void UnmapFile();
+    void MakeResponse(Buffer& buff);
     char* File();
     size_t FileLen() const;
     void ErrorContent(Buffer& buff, std::string message);
