@@ -39,7 +39,7 @@ bool HttpRequest::IsKeepAlive() const {
 
 bool HttpRequest::parse(Buffer &buff) {
     const char CRLF[] = "\r\n";
-    if (buff.ReadableBytes() < 0) {
+    if (buff.ReadableBytes() <= 0) {
         return false;
     }
     while (buff.ReadableBytes() > 0 && state_ != PARSE_STATE::FINISH) {
@@ -61,6 +61,7 @@ bool HttpRequest::parse(Buffer &buff) {
             break;
         case PARSE_STATE::BODY:
             ParseBody_(line);
+            break;
         default: break;
         }
         if (lineEnd == buff.BeginWrite()) { break; }
@@ -75,8 +76,10 @@ void HttpRequest::ParsePath_() {
         path_ = "/index.html";
     } else {
         for (auto &item : HttpRequest::DEFAULT_HTML) {
-            path_ += ".html";
-            break;
+            if (item == path_) {
+                path_ += ".html";
+                break;
+            }
         }
     }
 }
@@ -96,7 +99,7 @@ bool HttpRequest::ParseRequestLine_(const std::string &line) {
 }
 
 void HttpRequest::ParseHeader_(const std::string &line) {
-    regex patten("^([^:]*) ?(.*)$");
+    regex patten("^([^:]*): ?(.*)$");
     smatch submatch;
     if (regex_match(line, submatch, patten)) {
         header_[submatch[1]] = submatch[2];
@@ -119,24 +122,24 @@ int HttpRequest::ConverHex(char ch) {
 }
 
 void HttpRequest::ParsePost_() {
-    if (method_ == "Post" && header_["Context-type"] == "application/x-www-form-urlencoded") {
+    if (method_ == "POST" && header_["Content-Type"] == "application/x-www-form-urlencoded") {
         ParseFromUrlencoded_();
         if (DEFAULT_HTML_TAG.count(path_)) {
             int tag = DEFAULT_HTML_TAG.find(path_)->second;
-            LOG_DEBUG("Tag: %d", tag);
+            LOG_DEBUG("Tag:%d", tag);
             if (tag == 0 || tag == 1) {
                 bool isLogin = (tag == 1);
                 if (UserVerify(post_["username"], post_["password"], isLogin)) {
-                    path_ = "/welcome.html";
+                    path_ = "welcome.html";
                 } else {
-                    path_ = "/error.html";
+                    path_ = "error.html";
                 }
             }
         }
     }
 }
 
-bool HttpRequest::UserVerify(const std::string &name, const std::string &pwd, bool isLogin) {
+bool HttpRequest::UserVerify(const string &name, const string &pwd, bool isLogin) {
     if (name == "" || pwd == "") { return false; }
     LOG_INFO("Verify name:%s pwd:%s", name.c_str(), pwd.c_str());
     MYSQL *sql;

@@ -32,9 +32,9 @@ const std::unordered_map<int, std::string> HttpResponse::CODE_STATUS = {
 };
 
 const std::unordered_map<int, std::string> HttpResponse::CODE_PATH = {
-    {400, "/400.html"},
-    {403, "/403.html"},
-    {404, "/404.html"},
+    {400, "400.html"},
+    {403, "403.html"},
+    {404, "404.html"},
 };
 
 HttpResponse::HttpResponse() {
@@ -72,7 +72,7 @@ void HttpResponse::Init(const std::string &srcDir, std::string &path,
 void HttpResponse::MakeResponse(Buffer &buff) {
     if (stat((srcDir_ + path_).data(), &mmFileStat_) || S_ISDIR(mmFileStat_.st_mode)) {
         code_ = 404;
-    } else if (!mmFileStat_.st_mode & S_IROTH) {
+    } else if (!(mmFileStat_.st_mode & S_IROTH)) {
         code_ = 403;
     } else if (code_ == -1) {
         code_ = 200;
