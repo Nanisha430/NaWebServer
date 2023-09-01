@@ -3114,3 +3114,1161 @@
 2023-09-01 15:18:15.110778 [debug]: file path /home/nanisha/Webserver/resources//js/custom.js
 2023-09-01 15:18:15.110835 [debug]: filesize:1047, 2  to 1176
 2023-09-01 15:18:15.386761 [info] : Client[20](127.0.0.1:30385) in, userCount:6
+2023-09-01 16:24:03.445844 [info] : ========== Server init ==========
+2023-09-01 16:24:03.445853 [info] : Port:1316, OpenLinger: false
+2023-09-01 16:24:03.445855 [info] : Listen Mode: ET, OpenConn Mode: ET
+2023-09-01 16:24:03.445857 [info] : LogSys level: 0
+2023-09-01 16:24:03.445858 [info] : srcDir: /home/nanisha/Webserver/resources/
+2023-09-01 16:24:03.445860 [info] : SqlConnPool num: 12, ThreadPool num: 6
+2023-09-01 16:24:03.445862 [info] : ========== Server start ==========
+2023-09-01 16:24:06.816578 [info] : Client[18](127.0.0.1:42161) in, userCount:1
+2023-09-01 16:24:06.816682 [info] : Client[18] in!
+2023-09-01 16:24:06.816716 [info] : Client[19](127.0.0.1:41649) in, userCount:2
+2023-09-01 16:24:06.816744 [info] : Client[19] in!
+2023-09-01 16:24:06.817316 [debug]: [GET], [/index.html], [1.1]
+2023-09-01 16:24:06.817420 [debug]: /index.html
+2023-09-01 16:24:06.817461 [debug]: file path /home/nanisha/Webserver/resources//index.html
+2023-09-01 16:24:06.817530 [debug]: filesize:3148, 2  to 3270
+2023-09-01 16:24:06.826756 [debug]: [GET], [/css/bootstrap.min.css], [1.1]
+2023-09-01 16:24:06.826841 [debug]: [GET], [/css/animate.css], [1.1]
+2023-09-01 16:24:06.826990 [debug]: /css/bootstrap.min.css
+2023-09-01 16:24:06.827123 [debug]: /css/animate.css
+2023-09-01 16:24:06.827131 [debug]: file path /home/nanisha/Webserver/resources//css/bootstrap.min.css
+2023-09-01 16:24:06.827296 [debug]: filesize:121260, 2  to 121384
+2023-09-01 16:24:06.827302 [debug]: file path /home/nanisha/Webserver/resources//css/animate.css
+2023-09-01 16:24:06.827517 [debug]: filesize:72922, 2  to 73045
+2023-09-01 16:24:06.833649 [debug]: [GET], [/css/magnific-popup.css], [1.1]
+2023-09-01 16:24:06.833968 [debug]: /css/magnific-popup.css
+2023-09-01 16:24:06.834077 [debug]: file path /home/nanisha/Webserver/resources//css/magnific-popup.css
+2023-09-01 16:24:06.834139 [debug]: filesize:6951, 2  to 7073
+2023-09-01 16:24:06.837197 [debug]: [GET], [/css/font-awesome.min.css], [1.1]
+2023-09-01 16:24:06.837430 [debug]: /css/font-awesome.min.css
+2023-09-01 16:24:06.837543 [debug]: file path /home/nanisha/Webserver/resources//css/font-awesome.min.css
+2023-09-01 16:24:06.837705 [debug]: filesize:27392, 2  to 27515
+2023-09-01 16:24:06.838048 [debug]: [GET], [/css/style.css], [1.1]
+2023-09-01 16:24:06.838099 [debug]: /css/style.css
+2023-09-01 16:24:06.838127 [debug]: file path /home/nanisha/Webserver/resources//css/style.css
+2023-09-01 16:24:06.838157 [debug]: filesize:9807, 2  to 9929
+2023-09-01 16:24:06.842338 [debug]: [GET], [/js/jquery.js], [1.1]
+2023-09-01 16:24:06.842534 [debug]: /js/jquery.js
+2023-09-01 16:24:06.842659 [debug]: file path /home/nanisha/Webserver/resources//js/jquery.js
+2023-09-01 16:24:06.842718 [debug]: filesize:85658, 2  to 85788
+2023-09-01 16:24:06.843967 [debug]: [GET], [/images/profile-image.jpg], [1.1]
+2023-09-01 16:24:06.844042 [debug]: /images/profile-image.jpg
+2023-09-01 16:24:06.844086 [debug]: file path /home/nanisha/Webserver/resources//images/profile-image.jpg
+2023-09-01 16:24:06.844162 [debug]: filesize:47176, 2  to 47300
+2023-09-01 16:24:06.850049 [debug]: [GET], [/js/bootstrap.min.js], [1.1]
+2023-09-01 16:24:06.850233 [debug]: /js/bootstrap.min.js
+2023-09-01 16:24:06.850362 [debug]: file path /home/nanisha/Webserver/resources//js/bootstrap.min.js
+2023-09-01 16:24:06.850404 [debug]: filesize:36868, 2  to 36998
+2023-09-01 16:24:06.852735 [debug]: [GET], [/js/smoothscroll.js], [1.1]
+2023-09-01 16:24:06.852884 [debug]: /js/smoothscroll.js
+2023-09-01 16:24:06.852987 [debug]: file path /home/nanisha/Webserver/resources//js/smoothscroll.js
+2023-09-01 16:24:06.853052 [debug]: filesize:4474, 2  to 4603
+2023-09-01 16:24:06.856031 [debug]: [GET], [/js/jquery.magnific-popup.min.js], [1.1]
+2023-09-01 16:24:06.856128 [debug]: /js/jquery.magnific-popup.min.js
+2023-09-01 16:24:06.856175 [debug]: file path /home/nanisha/Webserver/resources//js/jquery.magnific-popup.min.js
+2023-09-01 16:24:06.856220 [debug]: filesize:20932, 2  to 21062
+2023-09-01 16:24:06.866905 [debug]: [GET], [/js/magnific-popup-options.js], [1.1]
+2023-09-01 16:24:06.867445 [debug]: /js/magnific-popup-options.js
+2023-09-01 16:24:06.867715 [debug]: file path /home/nanisha/Webserver/resources//js/magnific-popup-options.js
+2023-09-01 16:24:06.867852 [debug]: filesize:1069, 2  to 1198
+2023-09-01 16:24:06.871198 [debug]: [GET], [/js/wow.min.js], [1.1]
+2023-09-01 16:24:06.871347 [debug]: /js/wow.min.js
+2023-09-01 16:24:06.871411 [debug]: file path /home/nanisha/Webserver/resources//js/wow.min.js
+2023-09-01 16:24:06.871427 [debug]: filesize:7082, 2  to 7211
+2023-09-01 16:24:06.871550 [debug]: [GET], [/js/custom.js], [1.1]
+2023-09-01 16:24:06.871700 [debug]: /js/custom.js
+2023-09-01 16:24:06.871798 [debug]: file path /home/nanisha/Webserver/resources//js/custom.js
+2023-09-01 16:24:06.871844 [debug]: filesize:1047, 2  to 1176
+2023-09-01 16:24:07.080161 [info] : Client[20](127.0.0.1:43185) in, userCount:3
+2023-09-01 16:24:07.080257 [info] : Client[20] in!
+2023-09-01 16:24:07.157937 [info] : Client[21](127.0.0.1:43697) in, userCount:4
+2023-09-01 16:24:07.158040 [info] : Client[21] in!
+2023-09-01 16:24:07.158293 [info] : Client[22](127.0.0.1:44209) in, userCount:5
+2023-09-01 16:24:07.158375 [info] : Client[22] in!
+2023-09-01 16:24:32.447660 [debug]: [GET], [/index.html], [1.1]
+2023-09-01 16:24:32.447738 [debug]: /index.html
+2023-09-01 16:24:32.447770 [debug]: file path /home/nanisha/Webserver/resources//index.html
+2023-09-01 16:24:32.447803 [debug]: filesize:3148, 2  to 3270
+2023-09-01 16:24:32.461997 [debug]: [GET], [/css/bootstrap.min.css], [1.1]
+2023-09-01 16:24:32.462134 [debug]: [GET], [/css/magnific-popup.css], [1.1]
+2023-09-01 16:24:32.462257 [debug]: /css/bootstrap.min.css
+2023-09-01 16:24:32.462393 [debug]: /css/magnific-popup.css
+2023-09-01 16:24:32.462475 [debug]: [GET], [/css/animate.css], [1.1]
+2023-09-01 16:24:32.462507 [debug]: file path /home/nanisha/Webserver/resources//css/magnific-popup.css
+2023-09-01 16:24:32.462400 [debug]: file path /home/nanisha/Webserver/resources//css/bootstrap.min.css
+2023-09-01 16:24:32.462528 [debug]: filesize:6951, 2  to 7073
+2023-09-01 16:24:32.462550 [debug]: /css/animate.css
+2023-09-01 16:24:32.462622 [debug]: filesize:121260, 2  to 121384
+2023-09-01 16:24:32.462727 [debug]: [GET], [/css/style.css], [1.1]
+2023-09-01 16:24:32.462745 [debug]: file path /home/nanisha/Webserver/resources//css/animate.css
+2023-09-01 16:24:32.462739 [debug]: /css/style.css
+2023-09-01 16:24:32.462915 [debug]: filesize:72922, 2  to 73045
+2023-09-01 16:24:32.462735 [debug]: [GET], [/css/font-awesome.min.css], [1.1]
+2023-09-01 16:24:32.462983 [debug]: file path /home/nanisha/Webserver/resources//css/style.css
+2023-09-01 16:24:32.463208 [debug]: filesize:9807, 2  to 9929
+2023-09-01 16:24:32.463314 [debug]: /css/font-awesome.min.css
+2023-09-01 16:24:32.463403 [debug]: file path /home/nanisha/Webserver/resources//css/font-awesome.min.css
+2023-09-01 16:24:32.463491 [debug]: filesize:27392, 2  to 27515
+2023-09-01 16:24:32.466707 [debug]: [GET], [/js/jquery.js], [1.1]
+2023-09-01 16:24:32.466890 [debug]: /js/jquery.js
+2023-09-01 16:24:32.466991 [debug]: file path /home/nanisha/Webserver/resources//js/jquery.js
+2023-09-01 16:24:32.467087 [debug]: filesize:85658, 2  to 85788
+2023-09-01 16:24:32.473926 [debug]: [GET], [/js/bootstrap.min.js], [1.1]
+2023-09-01 16:24:32.474095 [debug]: /js/bootstrap.min.js
+2023-09-01 16:24:32.474102 [debug]: [GET], [/images/profile-image.jpg], [1.1]
+2023-09-01 16:24:32.474279 [debug]: [GET], [/js/jquery.magnific-popup.min.js], [1.1]
+2023-09-01 16:24:32.474393 [debug]: /images/profile-image.jpg
+2023-09-01 16:24:32.474431 [debug]: [GET], [/js/smoothscroll.js], [1.1]
+2023-09-01 16:24:32.474467 [debug]: /js/smoothscroll.js
+2023-09-01 16:24:32.474486 [debug]: file path /home/nanisha/Webserver/resources//images/profile-image.jpg
+2023-09-01 16:24:32.474498 [debug]: /js/jquery.magnific-popup.min.js
+2023-09-01 16:24:32.474511 [debug]: file path /home/nanisha/Webserver/resources//js/smoothscroll.js
+2023-09-01 16:24:32.474525 [debug]: file path /home/nanisha/Webserver/resources//js/bootstrap.min.js
+2023-09-01 16:24:32.474594 [debug]: filesize:4474, 2  to 4603
+2023-09-01 16:24:32.474668 [debug]: file path /home/nanisha/Webserver/resources//js/jquery.magnific-popup.min.js
+2023-09-01 16:24:32.474693 [debug]: filesize:36868, 2  to 36998
+2023-09-01 16:24:32.474718 [debug]: filesize:20932, 2  to 21062
+2023-09-01 16:24:32.474736 [debug]: filesize:47176, 2  to 47300
+2023-09-01 16:24:32.476874 [debug]: [GET], [/js/magnific-popup-options.js], [1.1]
+2023-09-01 16:24:32.477008 [debug]: /js/magnific-popup-options.js
+2023-09-01 16:24:32.477115 [debug]: file path /home/nanisha/Webserver/resources//js/magnific-popup-options.js
+2023-09-01 16:24:32.477272 [debug]: filesize:1069, 2  to 1198
+2023-09-01 16:24:32.481608 [debug]: [GET], [/js/wow.min.js], [1.1]
+2023-09-01 16:24:32.481758 [debug]: /js/wow.min.js
+2023-09-01 16:24:32.481919 [debug]: file path /home/nanisha/Webserver/resources//js/wow.min.js
+2023-09-01 16:24:32.481972 [debug]: filesize:7082, 2  to 7211
+2023-09-01 16:24:32.484842 [debug]: [GET], [/js/custom.js], [1.1]
+2023-09-01 16:24:32.484923 [debug]: /js/custom.js
+2023-09-01 16:24:32.484958 [debug]: file path /home/nanisha/Webserver/resources//js/custom.js
+2023-09-01 16:24:32.484994 [debug]: filesize:1047, 2  to 1176
+2023-09-01 16:24:32.765628 [info] : Client[23](127.0.0.1:44721) in, userCount:6
+2023-09-01 16:24:32.765768 [info] : Client[23] in!
+2023-09-01 16:25:32.525507 [info] : Client[18] quit!
+2023-09-01 16:25:32.525651 [info] : Client[18](127.0.0.1:42161) quit, UserCount:5
+2023-09-01 16:25:32.525679 [info] : Client[19] quit!
+2023-09-01 16:25:32.525787 [info] : Client[19](127.0.0.1:41649) quit, UserCount:4
+2023-09-01 16:25:32.525834 [info] : Client[21] quit!
+2023-09-01 16:25:32.525893 [info] : Client[21](127.0.0.1:43697) quit, UserCount:3
+2023-09-01 16:25:32.525952 [info] : Client[22] quit!
+2023-09-01 16:25:32.526036 [info] : Client[22](127.0.0.1:44209) quit, UserCount:2
+2023-09-01 16:25:32.526116 [info] : Client[20] quit!
+2023-09-01 16:25:32.526229 [info] : Client[20](127.0.0.1:43185) quit, UserCount:1
+2023-09-01 16:25:32.765567 [info] : Client[23] quit!
+2023-09-01 16:29:46.093968 [info] : ========== Server init ==========
+2023-09-01 16:29:46.094001 [info] : Port:1316, OpenLinger: false
+2023-09-01 16:29:46.094008 [info] : Listen Mode: ET, OpenConn Mode: ET
+2023-09-01 16:29:46.094012 [info] : LogSys level: 0
+2023-09-01 16:29:46.094015 [info] : srcDir: /home/nanisha/Webserver/resources/
+2023-09-01 16:29:46.094019 [info] : SqlConnPool num: 12, ThreadPool num: 6
+2023-09-01 16:29:46.094193 [info] : ========== Server start ==========
+2023-09-01 16:29:48.978987 [info] : Client[18](127.0.0.1:51889) in, userCount:1
+2023-09-01 16:29:48.979095 [info] : Client[18] in!
+2023-09-01 16:29:48.979126 [info] : Client[19](127.0.0.1:52401) in, userCount:2
+2023-09-01 16:29:48.979133 [info] : Client[19] in!
+2023-09-01 16:29:48.979791 [debug]: [GET], [/index.html], [1.1]
+2023-09-01 16:29:48.979844 [debug]: /index.html
+2023-09-01 16:29:48.979891 [debug]: file path /home/nanisha/Webserver/resources//index.html
+2023-09-01 16:29:48.979962 [debug]: filesize:3148, 2  to 3270
+2023-09-01 16:29:48.984231 [info] : Client[19] quit!
+2023-09-01 16:29:48.984462 [info] : Client[19](127.0.0.1:52401) quit, UserCount:1
+2023-09-01 16:29:48.984503 [info] : Client[18] quit!
+2023-09-01 16:29:48.984604 [info] : Client[18](127.0.0.1:51889) quit, UserCount:0
+2023-09-01 16:29:49.238470 [info] : Client[18](127.0.0.1:52913) in, userCount:1
+2023-09-01 16:29:49.238664 [info] : Client[18] in!
+2023-09-01 16:29:49.239810 [debug]: [GET], [/css/bootstrap.min.css], [1.1]
+2023-09-01 16:29:49.239903 [debug]: /css/bootstrap.min.css
+2023-09-01 16:29:49.239941 [debug]: file path /home/nanisha/Webserver/resources//css/bootstrap.min.css
+2023-09-01 16:29:49.239976 [debug]: filesize:121260, 2  to 121384
+2023-09-01 16:29:49.244208 [debug]: [GET], [/css/animate.css], [1.1]
+2023-09-01 16:29:49.244375 [debug]: /css/animate.css
+2023-09-01 16:29:49.244480 [debug]: file path /home/nanisha/Webserver/resources//css/animate.css
+2023-09-01 16:29:49.244549 [debug]: filesize:72922, 2  to 73045
+2023-09-01 16:29:49.249088 [debug]: [GET], [/css/magnific-popup.css], [1.1]
+2023-09-01 16:29:49.249478 [debug]: /css/magnific-popup.css
+2023-09-01 16:29:49.249590 [debug]: file path /home/nanisha/Webserver/resources//css/magnific-popup.css
+2023-09-01 16:29:49.249656 [debug]: filesize:6951, 2  to 7073
+2023-09-01 16:29:49.251738 [debug]: [GET], [/css/font-awesome.min.css], [1.1]
+2023-09-01 16:29:49.251810 [debug]: /css/font-awesome.min.css
+2023-09-01 16:29:49.251843 [debug]: file path /home/nanisha/Webserver/resources//css/font-awesome.min.css
+2023-09-01 16:29:49.251879 [debug]: filesize:27392, 2  to 27515
+2023-09-01 16:29:49.254926 [debug]: [GET], [/css/style.css], [1.1]
+2023-09-01 16:29:49.255142 [debug]: /css/style.css
+2023-09-01 16:29:49.255286 [debug]: file path /home/nanisha/Webserver/resources//css/style.css
+2023-09-01 16:29:49.255428 [debug]: filesize:9807, 2  to 9929
+2023-09-01 16:29:49.258047 [debug]: [GET], [/js/jquery.js], [1.1]
+2023-09-01 16:29:49.258136 [debug]: /js/jquery.js
+2023-09-01 16:29:49.258178 [debug]: file path /home/nanisha/Webserver/resources//js/jquery.js
+2023-09-01 16:29:49.258251 [debug]: filesize:85658, 2  to 85788
+2023-09-01 16:29:49.263672 [debug]: [GET], [/images/profile-image.jpg], [1.1]
+2023-09-01 16:29:49.263830 [debug]: /images/profile-image.jpg
+2023-09-01 16:29:49.263933 [debug]: file path /home/nanisha/Webserver/resources//images/profile-image.jpg
+2023-09-01 16:29:49.263972 [debug]: filesize:47176, 2  to 47300
+2023-09-01 16:29:49.266895 [debug]: [GET], [/js/bootstrap.min.js], [1.1]
+2023-09-01 16:29:49.267116 [debug]: /js/bootstrap.min.js
+2023-09-01 16:29:49.267271 [debug]: file path /home/nanisha/Webserver/resources//js/bootstrap.min.js
+2023-09-01 16:29:49.267387 [debug]: filesize:36868, 2  to 36998
+2023-09-01 16:29:49.272384 [debug]: [GET], [/js/smoothscroll.js], [1.1]
+2023-09-01 16:29:49.272636 [debug]: /js/smoothscroll.js
+2023-09-01 16:29:49.272735 [debug]: file path /home/nanisha/Webserver/resources//js/smoothscroll.js
+2023-09-01 16:29:49.272791 [debug]: filesize:4474, 2  to 4603
+2023-09-01 16:29:49.276314 [debug]: [GET], [/js/jquery.magnific-popup.min.js], [1.1]
+2023-09-01 16:29:49.276676 [debug]: /js/jquery.magnific-popup.min.js
+2023-09-01 16:29:49.276793 [debug]: file path /home/nanisha/Webserver/resources//js/jquery.magnific-popup.min.js
+2023-09-01 16:29:49.276870 [debug]: filesize:20932, 2  to 21062
+2023-09-01 16:29:49.280168 [debug]: [GET], [/js/magnific-popup-options.js], [1.1]
+2023-09-01 16:29:49.280251 [debug]: /js/magnific-popup-options.js
+2023-09-01 16:29:49.280293 [debug]: file path /home/nanisha/Webserver/resources//js/magnific-popup-options.js
+2023-09-01 16:29:49.280334 [debug]: filesize:1069, 2  to 1198
+2023-09-01 16:29:49.282932 [debug]: [GET], [/js/wow.min.js], [1.1]
+2023-09-01 16:29:49.283164 [debug]: /js/wow.min.js
+2023-09-01 16:29:49.283289 [debug]: file path /home/nanisha/Webserver/resources//js/wow.min.js
+2023-09-01 16:29:49.283380 [debug]: filesize:7082, 2  to 7211
+2023-09-01 16:29:49.285824 [debug]: [GET], [/js/custom.js], [1.1]
+2023-09-01 16:29:49.285918 [debug]: /js/custom.js
+2023-09-01 16:29:49.285967 [debug]: file path /home/nanisha/Webserver/resources//js/custom.js
+2023-09-01 16:29:49.286008 [debug]: filesize:1047, 2  to 1176
+2023-09-01 16:29:49.290201 [info] : Client[18] quit!
+2023-09-01 16:29:49.290408 [info] : Client[18](127.0.0.1:52913) quit, UserCount:0
+2023-09-01 16:29:49.302297 [info] : Client[18](127.0.0.1:53425) in, userCount:1
+2023-09-01 16:29:49.302501 [info] : Client[18] in!
+2023-09-01 16:29:49.303295 [info] : Client[19](127.0.0.1:53937) in, userCount:2
+2023-09-01 16:29:49.303426 [info] : Client[19] in!
+2023-09-01 16:29:49.303660 [info] : Client[20](127.0.0.1:54449) in, userCount:3
+2023-09-01 16:29:49.303846 [info] : Client[20] in!
+2023-09-01 16:29:49.304102 [info] : Client[21](127.0.0.1:54961) in, userCount:4
+2023-09-01 16:29:49.304252 [info] : Client[21] in!
+2023-09-01 16:29:49.304432 [info] : Client[22](127.0.0.1:55473) in, userCount:5
+2023-09-01 16:29:49.304528 [info] : Client[22] in!
+2023-09-01 16:29:49.306727 [info] : Client[18] quit!
+2023-09-01 16:29:49.306858 [info] : Client[18](127.0.0.1:53425) quit, UserCount:4
+2023-09-01 16:29:49.307982 [info] : Client[19] quit!
+2023-09-01 16:29:49.308150 [info] : Client[19](127.0.0.1:53937) quit, UserCount:3
+2023-09-01 16:29:49.308188 [info] : Client[20] quit!
+2023-09-01 16:29:49.308244 [info] : Client[20](127.0.0.1:54449) quit, UserCount:2
+2023-09-01 16:29:49.308259 [info] : Client[21] quit!
+2023-09-01 16:29:49.308313 [info] : Client[21](127.0.0.1:54961) quit, UserCount:1
+2023-09-01 16:29:49.309507 [info] : Client[22] quit!
+2023-09-01 16:29:49.309765 [info] : Client[22](127.0.0.1:55473) quit, UserCount:0
+2023-09-01 16:30:14.088876 [info] : Client[18](127.0.0.1:55985) in, userCount:1
+2023-09-01 16:30:14.089068 [info] : Client[18] in!
+2023-09-01 16:30:14.089678 [debug]: [GET], [/index.html], [1.1]
+2023-09-01 16:30:14.089788 [debug]: /index.html
+2023-09-01 16:30:14.089866 [debug]: file path /home/nanisha/Webserver/resources//index.html
+2023-09-01 16:30:14.089920 [debug]: filesize:3148, 2  to 3270
+2023-09-01 16:30:14.094095 [info] : Client[18] quit!
+2023-09-01 16:30:14.094256 [info] : Client[18](127.0.0.1:55985) quit, UserCount:0
+2023-09-01 16:30:14.152790 [info] : Client[18](127.0.0.1:56497) in, userCount:1
+2023-09-01 16:30:14.153043 [info] : Client[18] in!
+2023-09-01 16:30:14.153717 [debug]: [GET], [/css/bootstrap.min.css], [1.1]
+2023-09-01 16:30:14.154032 [debug]: /css/bootstrap.min.css
+2023-09-01 16:30:14.154175 [debug]: file path /home/nanisha/Webserver/resources//css/bootstrap.min.css
+2023-09-01 16:30:14.154239 [debug]: filesize:121260, 2  to 121384
+2023-09-01 16:30:14.157344 [debug]: [GET], [/css/animate.css], [1.1]
+2023-09-01 16:30:14.157418 [debug]: /css/animate.css
+2023-09-01 16:30:14.157468 [debug]: file path /home/nanisha/Webserver/resources//css/animate.css
+2023-09-01 16:30:14.157508 [debug]: filesize:72922, 2  to 73045
+2023-09-01 16:30:14.160701 [debug]: [GET], [/css/magnific-popup.css], [1.1]
+2023-09-01 16:30:14.160804 [debug]: /css/magnific-popup.css
+2023-09-01 16:30:14.160865 [debug]: file path /home/nanisha/Webserver/resources//css/magnific-popup.css
+2023-09-01 16:30:14.160909 [debug]: filesize:6951, 2  to 7073
+2023-09-01 16:30:14.163334 [debug]: [GET], [/css/font-awesome.min.css], [1.1]
+2023-09-01 16:30:14.163536 [debug]: /css/font-awesome.min.css
+2023-09-01 16:30:14.163623 [debug]: file path /home/nanisha/Webserver/resources//css/font-awesome.min.css
+2023-09-01 16:30:14.163659 [debug]: filesize:27392, 2  to 27515
+2023-09-01 16:30:14.169035 [debug]: [GET], [/css/style.css], [1.1]
+2023-09-01 16:30:14.169146 [debug]: /css/style.css
+2023-09-01 16:30:14.169207 [debug]: file path /home/nanisha/Webserver/resources//css/style.css
+2023-09-01 16:30:14.169243 [debug]: filesize:9807, 2  to 9929
+2023-09-01 16:30:14.171909 [debug]: [GET], [/js/jquery.js], [1.1]
+2023-09-01 16:30:14.172051 [debug]: /js/jquery.js
+2023-09-01 16:30:14.172154 [debug]: file path /home/nanisha/Webserver/resources//js/jquery.js
+2023-09-01 16:30:14.172223 [debug]: filesize:85658, 2  to 85788
+2023-09-01 16:30:14.175672 [debug]: [GET], [/images/profile-image.jpg], [1.1]
+2023-09-01 16:30:14.175857 [debug]: /images/profile-image.jpg
+2023-09-01 16:30:14.175953 [debug]: file path /home/nanisha/Webserver/resources//images/profile-image.jpg
+2023-09-01 16:30:14.176037 [debug]: filesize:47176, 2  to 47300
+2023-09-01 16:30:14.180275 [info] : Client[18] quit!
+2023-09-01 16:30:14.180491 [info] : Client[18](127.0.0.1:56497) quit, UserCount:0
+2023-09-01 16:30:14.338349 [info] : Client[18](127.0.0.1:57009) in, userCount:1
+2023-09-01 16:30:14.338478 [info] : Client[18] in!
+2023-09-01 16:30:14.339047 [debug]: [GET], [/js/smoothscroll.js], [1.1]
+2023-09-01 16:30:14.339110 [debug]: /js/smoothscroll.js
+2023-09-01 16:30:14.339128 [debug]: file path /home/nanisha/Webserver/resources//js/smoothscroll.js
+2023-09-01 16:30:14.339147 [debug]: filesize:4474, 2  to 4603
+2023-09-01 16:30:14.341771 [debug]: [GET], [/js/jquery.magnific-popup.min.js], [1.1]
+2023-09-01 16:30:14.341950 [debug]: /js/jquery.magnific-popup.min.js
+2023-09-01 16:30:14.342084 [debug]: file path /home/nanisha/Webserver/resources//js/jquery.magnific-popup.min.js
+2023-09-01 16:30:14.342239 [debug]: filesize:20932, 2  to 21062
+2023-09-01 16:30:14.345859 [debug]: [GET], [/js/magnific-popup-options.js], [1.1]
+2023-09-01 16:30:14.345941 [debug]: /js/magnific-popup-options.js
+2023-09-01 16:30:14.345982 [debug]: file path /home/nanisha/Webserver/resources//js/magnific-popup-options.js
+2023-09-01 16:30:14.346019 [debug]: filesize:1069, 2  to 1198
+2023-09-01 16:30:14.348030 [debug]: [GET], [/js/wow.min.js], [1.1]
+2023-09-01 16:30:14.348100 [debug]: /js/wow.min.js
+2023-09-01 16:30:14.348133 [debug]: file path /home/nanisha/Webserver/resources//js/wow.min.js
+2023-09-01 16:30:14.348166 [debug]: filesize:7082, 2  to 7211
+2023-09-01 16:30:14.350400 [debug]: [GET], [/js/bootstrap.min.js], [1.1]
+2023-09-01 16:30:14.350487 [debug]: /js/bootstrap.min.js
+2023-09-01 16:30:14.350531 [debug]: file path /home/nanisha/Webserver/resources//js/bootstrap.min.js
+2023-09-01 16:30:14.350574 [debug]: filesize:36868, 2  to 36998
+2023-09-01 16:30:14.354158 [debug]: [GET], [/js/custom.js], [1.1]
+2023-09-01 16:30:14.354356 [debug]: /js/custom.js
+2023-09-01 16:30:14.354443 [debug]: file path /home/nanisha/Webserver/resources//js/custom.js
+2023-09-01 16:30:14.354478 [debug]: filesize:1047, 2  to 1176
+2023-09-01 16:30:14.358641 [info] : Client[18] quit!
+2023-09-01 16:30:14.358864 [info] : Client[18](127.0.0.1:57009) quit, UserCount:0
+2023-09-01 16:30:14.405771 [info] : Client[18](127.0.0.1:57521) in, userCount:1
+2023-09-01 16:30:14.405975 [info] : Client[18] in!
+2023-09-01 16:30:14.406194 [info] : Client[19](127.0.0.1:58033) in, userCount:2
+2023-09-01 16:30:14.406346 [info] : Client[19] in!
+2023-09-01 16:30:14.406719 [info] : Client[20](127.0.0.1:58545) in, userCount:3
+2023-09-01 16:30:14.406773 [info] : Client[20] in!
+2023-09-01 16:30:14.406783 [info] : Client[21](127.0.0.1:59057) in, userCount:4
+2023-09-01 16:30:14.406787 [info] : Client[21] in!
+2023-09-01 16:30:14.410963 [info] : Client[18] quit!
+2023-09-01 16:30:14.411761 [info] : Client[18](127.0.0.1:57521) quit, UserCount:3
+2023-09-01 16:30:14.411933 [info] : Client[19] quit!
+2023-09-01 16:30:14.412048 [info] : Client[19](127.0.0.1:58033) quit, UserCount:2
+2023-09-01 16:30:14.412090 [info] : Client[20] quit!
+2023-09-01 16:30:14.412168 [info] : Client[20](127.0.0.1:58545) quit, UserCount:1
+2023-09-01 16:30:14.412174 [info] : Client[21] quit!
+2023-09-01 16:30:14.412259 [info] : Client[21](127.0.0.1:59057) quit, UserCount:0
+2023-09-01 16:30:14.495485 [info] : Client[18](127.0.0.1:59569) in, userCount:1
+2023-09-01 16:30:14.495594 [info] : Client[18] in!
+2023-09-01 16:30:14.499803 [info] : Client[18] quit!
+2023-09-01 16:30:14.500018 [info] : Client[18](127.0.0.1:59569) quit, UserCount:0
+2023-09-01 16:30:20.667875 [info] : Client[18](127.0.0.1:60081) in, userCount:1
+2023-09-01 16:30:20.668048 [info] : Client[18] in!
+2023-09-01 16:30:20.668890 [debug]: [GET], [/video.html], [1.1]
+2023-09-01 16:30:20.668944 [debug]: /video.html
+2023-09-01 16:30:20.668962 [debug]: file path /home/nanisha/Webserver/resources//video.html
+2023-09-01 16:30:20.669367 [debug]: filesize:3347, 2  to 3469
+2023-09-01 16:30:20.673641 [info] : Client[18] quit!
+2023-09-01 16:30:20.673847 [info] : Client[18](127.0.0.1:60081) quit, UserCount:0
+2023-09-01 16:30:20.732401 [info] : Client[18](127.0.0.1:60593) in, userCount:1
+2023-09-01 16:30:20.732851 [info] : Client[18] in!
+2023-09-01 16:30:20.733532 [debug]: [GET], [/css/bootstrap.min.css], [1.1]
+2023-09-01 16:30:20.733580 [debug]: /css/bootstrap.min.css
+2023-09-01 16:30:20.733595 [debug]: file path /home/nanisha/Webserver/resources//css/bootstrap.min.css
+2023-09-01 16:30:20.733609 [debug]: filesize:121260, 2  to 121384
+2023-09-01 16:30:20.736636 [debug]: [GET], [/css/animate.css], [1.1]
+2023-09-01 16:30:20.736822 [debug]: /css/animate.css
+2023-09-01 16:30:20.736940 [debug]: file path /home/nanisha/Webserver/resources//css/animate.css
+2023-09-01 16:30:20.737040 [debug]: filesize:72922, 2  to 73045
+2023-09-01 16:30:20.740170 [debug]: [GET], [/css/magnific-popup.css], [1.1]
+2023-09-01 16:30:20.740337 [debug]: /css/magnific-popup.css
+2023-09-01 16:30:20.740436 [debug]: file path /home/nanisha/Webserver/resources//css/magnific-popup.css
+2023-09-01 16:30:20.740515 [debug]: filesize:6951, 2  to 7073
+2023-09-01 16:30:20.742804 [debug]: [GET], [/css/font-awesome.min.css], [1.1]
+2023-09-01 16:30:20.743021 [debug]: /css/font-awesome.min.css
+2023-09-01 16:30:20.743198 [debug]: file path /home/nanisha/Webserver/resources//css/font-awesome.min.css
+2023-09-01 16:30:20.743302 [debug]: filesize:27392, 2  to 27515
+2023-09-01 16:30:20.747532 [debug]: [GET], [/css/style.css], [1.1]
+2023-09-01 16:30:20.747766 [debug]: /css/style.css
+2023-09-01 16:30:20.747849 [debug]: file path /home/nanisha/Webserver/resources//css/style.css
+2023-09-01 16:30:20.747910 [debug]: filesize:9807, 2  to 9929
+2023-09-01 16:30:20.751867 [debug]: [GET], [/js/jquery.js], [1.1]
+2023-09-01 16:30:20.751987 [debug]: /js/jquery.js
+2023-09-01 16:30:20.752034 [debug]: file path /home/nanisha/Webserver/resources//js/jquery.js
+2023-09-01 16:30:20.752085 [debug]: filesize:85658, 2  to 85788
+2023-09-01 16:30:20.756947 [debug]: [GET], [/images/profile-image.jpg], [1.1]
+2023-09-01 16:30:20.757376 [debug]: /images/profile-image.jpg
+2023-09-01 16:30:20.757634 [debug]: file path /home/nanisha/Webserver/resources//images/profile-image.jpg
+2023-09-01 16:30:20.757716 [debug]: filesize:47176, 2  to 47300
+2023-09-01 16:30:20.760952 [debug]: [GET], [/js/bootstrap.min.js], [1.1]
+2023-09-01 16:30:20.761039 [debug]: /js/bootstrap.min.js
+2023-09-01 16:30:20.761092 [debug]: file path /home/nanisha/Webserver/resources//js/bootstrap.min.js
+2023-09-01 16:30:20.761130 [debug]: filesize:36868, 2  to 36998
+2023-09-01 16:30:20.764658 [debug]: [GET], [/js/smoothscroll.js], [1.1]
+2023-09-01 16:30:20.764844 [debug]: /js/smoothscroll.js
+2023-09-01 16:30:20.764961 [debug]: file path /home/nanisha/Webserver/resources//js/smoothscroll.js
+2023-09-01 16:30:20.765050 [debug]: filesize:4474, 2  to 4603
+2023-09-01 16:30:20.768052 [debug]: [GET], [/js/jquery.magnific-popup.min.js], [1.1]
+2023-09-01 16:30:20.768130 [debug]: /js/jquery.magnific-popup.min.js
+2023-09-01 16:30:20.768185 [debug]: file path /home/nanisha/Webserver/resources//js/jquery.magnific-popup.min.js
+2023-09-01 16:30:20.768221 [debug]: filesize:20932, 2  to 21062
+2023-09-01 16:30:20.772159 [debug]: [GET], [/js/magnific-popup-options.js], [1.1]
+2023-09-01 16:30:20.772291 [debug]: /js/magnific-popup-options.js
+2023-09-01 16:30:20.772375 [debug]: file path /home/nanisha/Webserver/resources//js/magnific-popup-options.js
+2023-09-01 16:30:20.772427 [debug]: filesize:1069, 2  to 1198
+2023-09-01 16:30:20.776168 [debug]: [GET], [/js/wow.min.js], [1.1]
+2023-09-01 16:30:20.776347 [debug]: /js/wow.min.js
+2023-09-01 16:30:20.776425 [debug]: file path /home/nanisha/Webserver/resources//js/wow.min.js
+2023-09-01 16:30:20.776476 [debug]: filesize:7082, 2  to 7211
+2023-09-01 16:30:20.779052 [debug]: [GET], [/js/custom.js], [1.1]
+2023-09-01 16:30:20.779230 [debug]: /js/custom.js
+2023-09-01 16:30:20.779312 [debug]: file path /home/nanisha/Webserver/resources//js/custom.js
+2023-09-01 16:30:20.779363 [debug]: filesize:1047, 2  to 1176
+2023-09-01 16:30:20.781761 [debug]: [GET], [/video/xxx.mp4], [1.1]
+2023-09-01 16:30:20.781870 [debug]: /video/xxx.mp4
+2023-09-01 16:30:20.781911 [debug]: file path /home/nanisha/Webserver/resources//video/xxx.mp4
+2023-09-01 16:30:20.782566 [debug]: filesize:39667571, 2  to 39667698
+2023-09-01 16:30:20.787134 [info] : Client[18] quit!
+2023-09-01 16:30:20.787537 [info] : Client[18](127.0.0.1:60593) quit, UserCount:0
+2023-09-01 16:30:20.788861 [info] : Client[18] quit!
+2023-09-01 16:30:20.931365 [info] : Client[18](127.0.0.1:61105) in, userCount:1
+2023-09-01 16:30:20.931483 [info] : Client[18] in!
+2023-09-01 16:30:20.935620 [info] : Client[18] quit!
+2023-09-01 16:30:20.935860 [info] : Client[18](127.0.0.1:61105) quit, UserCount:0
+2023-09-01 16:30:20.995128 [info] : Client[18](127.0.0.1:61617) in, userCount:1
+2023-09-01 16:30:20.995470 [info] : Client[18] in!
+2023-09-01 16:30:20.995615 [info] : Client[19](127.0.0.1:62129) in, userCount:2
+2023-09-01 16:30:20.995667 [info] : Client[19] in!
+2023-09-01 16:30:20.996285 [info] : Client[20](127.0.0.1:62641) in, userCount:3
+2023-09-01 16:30:20.996423 [info] : Client[20] in!
+2023-09-01 16:30:20.996473 [info] : Client[21](127.0.0.1:63153) in, userCount:4
+2023-09-01 16:30:20.996515 [info] : Client[21] in!
+2023-09-01 16:30:20.999702 [info] : Client[18] quit!
+2023-09-01 16:30:20.999928 [info] : Client[18](127.0.0.1:61617) quit, UserCount:3
+2023-09-01 16:30:21.000038 [info] : Client[19] quit!
+2023-09-01 16:30:21.000154 [info] : Client[19](127.0.0.1:62129) quit, UserCount:2
+2023-09-01 16:30:21.001460 [info] : Client[20] quit!
+2023-09-01 16:30:21.001569 [info] : Client[20](127.0.0.1:62641) quit, UserCount:1
+2023-09-01 16:30:21.001708 [info] : Client[21] quit!
+2023-09-01 16:30:21.001831 [info] : Client[21](127.0.0.1:63153) quit, UserCount:0
+2023-09-01 16:30:21.431377 [info] : Client[18](127.0.0.1:63665) in, userCount:1
+2023-09-01 16:30:21.431473 [info] : Client[18] in!
+2023-09-01 16:30:21.432007 [debug]: [GET], [/video/xxx.mp4], [1.1]
+2023-09-01 16:30:21.432066 [debug]: /video/xxx.mp4
+2023-09-01 16:30:21.432084 [debug]: file path /home/nanisha/Webserver/resources//video/xxx.mp4
+2023-09-01 16:30:21.432100 [debug]: filesize:39667571, 2  to 39667698
+2023-09-01 16:30:21.436287 [info] : Client[18] quit!
+2023-09-01 16:30:21.436408 [info] : Client[18](127.0.0.1:63665) quit, UserCount:0
+2023-09-01 16:30:21.436893 [info] : Client[18] quit!
+2023-09-01 16:30:21.678582 [info] : Client[18](127.0.0.1:64177) in, userCount:1
+2023-09-01 16:30:21.678672 [info] : Client[18] in!
+2023-09-01 16:30:21.682830 [info] : Client[18] quit!
+2023-09-01 16:30:21.683009 [info] : Client[18](127.0.0.1:64177) quit, UserCount:0
+2023-09-01 16:30:22.062714 [info] : Client[18](127.0.0.1:64689) in, userCount:1
+2023-09-01 16:30:22.062814 [info] : Client[18] in!
+2023-09-01 16:30:22.063322 [debug]: [GET], [/video/xxx.mp4], [1.1]
+2023-09-01 16:30:22.063429 [debug]: /video/xxx.mp4
+2023-09-01 16:30:22.063470 [debug]: file path /home/nanisha/Webserver/resources//video/xxx.mp4
+2023-09-01 16:30:22.063510 [debug]: filesize:39667571, 2  to 39667698
+2023-09-01 16:30:22.067704 [info] : Client[18] quit!
+2023-09-01 16:30:22.067997 [info] : Client[18](127.0.0.1:64689) quit, UserCount:0
+2023-09-01 16:30:22.068191 [info] : Client[18] quit!
+2023-09-01 16:30:22.323766 [info] : Client[18](127.0.0.1:65201) in, userCount:1
+2023-09-01 16:30:22.323843 [info] : Client[18] in!
+2023-09-01 16:30:22.328008 [info] : Client[18] quit!
+2023-09-01 16:30:22.328104 [info] : Client[18](127.0.0.1:65201) quit, UserCount:0
+2023-09-01 16:30:22.760786 [info] : Client[18](127.0.0.1:178) in, userCount:1
+2023-09-01 16:30:22.760943 [info] : Client[18] in!
+2023-09-01 16:30:22.761592 [debug]: [GET], [/video/xxx.mp4], [1.1]
+2023-09-01 16:30:22.761704 [debug]: /video/xxx.mp4
+2023-09-01 16:30:22.761779 [debug]: file path /home/nanisha/Webserver/resources//video/xxx.mp4
+2023-09-01 16:30:22.761820 [debug]: filesize:39667571, 2  to 39667698
+2023-09-01 16:30:22.766162 [info] : Client[18] quit!
+2023-09-01 16:30:22.767132 [info] : Client[18](127.0.0.1:178) quit, UserCount:0
+2023-09-01 16:30:22.767736 [info] : Client[18] quit!
+2023-09-01 16:30:23.009601 [info] : Client[18](127.0.0.1:690) in, userCount:1
+2023-09-01 16:30:23.009675 [info] : Client[18] in!
+2023-09-01 16:30:23.013785 [info] : Client[18] quit!
+2023-09-01 16:30:23.013903 [info] : Client[18](127.0.0.1:690) quit, UserCount:0
+2023-09-01 16:30:23.431303 [info] : Client[18](127.0.0.1:1202) in, userCount:1
+2023-09-01 16:30:23.431378 [info] : Client[18] in!
+2023-09-01 16:30:23.431875 [debug]: [GET], [/video/xxx.mp4], [1.1]
+2023-09-01 16:30:23.431931 [debug]: /video/xxx.mp4
+2023-09-01 16:30:23.431945 [debug]: file path /home/nanisha/Webserver/resources//video/xxx.mp4
+2023-09-01 16:30:23.431957 [debug]: filesize:39667571, 2  to 39667698
+2023-09-01 16:30:23.436228 [info] : Client[18] quit!
+2023-09-01 16:30:23.436637 [info] : Client[18](127.0.0.1:1202) quit, UserCount:0
+2023-09-01 16:30:23.436753 [info] : Client[18] quit!
+2023-09-01 16:30:23.695397 [info] : Client[18](127.0.0.1:1714) in, userCount:1
+2023-09-01 16:30:23.695476 [info] : Client[18] in!
+2023-09-01 16:30:23.699723 [info] : Client[18] quit!
+2023-09-01 16:30:23.699856 [info] : Client[18](127.0.0.1:1714) quit, UserCount:0
+2023-09-01 16:30:24.114204 [info] : Client[18](127.0.0.1:2226) in, userCount:1
+2023-09-01 16:30:24.114278 [info] : Client[18] in!
+2023-09-01 16:30:24.114803 [debug]: [GET], [/video/xxx.mp4], [1.1]
+2023-09-01 16:30:24.114847 [debug]: /video/xxx.mp4
+2023-09-01 16:30:24.114862 [debug]: file path /home/nanisha/Webserver/resources//video/xxx.mp4
+2023-09-01 16:30:24.114873 [debug]: filesize:39667571, 2  to 39667698
+2023-09-01 16:30:24.119028 [info] : Client[18] quit!
+2023-09-01 16:30:24.119496 [info] : Client[18](127.0.0.1:2226) quit, UserCount:0
+2023-09-01 16:30:24.119750 [info] : Client[18] quit!
+2023-09-01 16:30:24.376481 [info] : Client[18](127.0.0.1:2738) in, userCount:1
+2023-09-01 16:30:24.376559 [info] : Client[18] in!
+2023-09-01 16:30:24.380720 [info] : Client[18] quit!
+2023-09-01 16:30:24.380799 [info] : Client[18](127.0.0.1:2738) quit, UserCount:0
+2023-09-01 16:30:24.811402 [info] : Client[18](127.0.0.1:3250) in, userCount:1
+2023-09-01 16:30:24.811473 [info] : Client[18] in!
+2023-09-01 16:30:24.811984 [debug]: [GET], [/video/xxx.mp4], [1.1]
+2023-09-01 16:30:24.812029 [debug]: /video/xxx.mp4
+2023-09-01 16:30:24.812044 [debug]: file path /home/nanisha/Webserver/resources//video/xxx.mp4
+2023-09-01 16:30:24.812056 [debug]: filesize:39667571, 2  to 39667698
+2023-09-01 16:30:24.816325 [info] : Client[18] quit!
+2023-09-01 16:30:24.816647 [info] : Client[18] quit!
+2023-09-01 16:30:24.817066 [info] : Client[18](127.0.0.1:3250) quit, UserCount:0
+2023-09-01 16:30:25.074435 [info] : Client[18](127.0.0.1:3762) in, userCount:1
+2023-09-01 16:30:25.074509 [info] : Client[18] in!
+2023-09-01 16:30:25.078750 [info] : Client[18] quit!
+2023-09-01 16:30:25.078832 [info] : Client[18](127.0.0.1:3762) quit, UserCount:0
+2023-09-01 16:30:25.567306 [info] : Client[18](127.0.0.1:4274) in, userCount:1
+2023-09-01 16:30:25.567393 [info] : Client[18] in!
+2023-09-01 16:30:25.567921 [debug]: [GET], [/video/xxx.mp4], [1.1]
+2023-09-01 16:30:25.568094 [debug]: /video/xxx.mp4
+2023-09-01 16:30:25.568172 [debug]: file path /home/nanisha/Webserver/resources//video/xxx.mp4
+2023-09-01 16:30:25.568215 [debug]: filesize:39667571, 2  to 39667698
+2023-09-01 16:30:25.572420 [info] : Client[18] quit!
+2023-09-01 16:30:25.572923 [info] : Client[18](127.0.0.1:4274) quit, UserCount:0
+2023-09-01 16:30:25.828462 [info] : Client[18](127.0.0.1:4786) in, userCount:1
+2023-09-01 16:30:25.828537 [info] : Client[18] in!
+2023-09-01 16:30:25.832727 [info] : Client[18] quit!
+2023-09-01 16:30:25.832836 [info] : Client[18](127.0.0.1:4786) quit, UserCount:0
+2023-09-01 16:30:40.241826 [info] : Client[18](127.0.0.1:5298) in, userCount:1
+2023-09-01 16:30:40.242044 [info] : Client[18] in!
+2023-09-01 16:30:40.242552 [debug]: [GET], [/video/xxx.mp4], [1.1]
+2023-09-01 16:30:40.242597 [debug]: /video/xxx.mp4
+2023-09-01 16:30:40.242612 [debug]: file path /home/nanisha/Webserver/resources//video/xxx.mp4
+2023-09-01 16:30:40.242624 [debug]: filesize:39667571, 2  to 39667698
+2023-09-01 16:30:40.246844 [info] : Client[18] quit!
+2023-09-01 16:30:40.247506 [info] : Client[18](127.0.0.1:5298) quit, UserCount:0
+2023-09-01 16:30:40.248372 [info] : Client[18] quit!
+2023-09-01 16:30:40.504466 [info] : Client[18](127.0.0.1:5810) in, userCount:1
+2023-09-01 16:30:40.504576 [info] : Client[18] in!
+2023-09-01 16:30:40.508792 [info] : Client[18] quit!
+2023-09-01 16:30:40.508911 [info] : Client[18](127.0.0.1:5810) quit, UserCount:0
+2023-09-01 16:30:41.000127 [info] : Client[18](127.0.0.1:6322) in, userCount:1
+2023-09-01 16:30:41.000233 [info] : Client[18] in!
+2023-09-01 16:30:41.001567 [debug]: [GET], [/video/xxx.mp4], [1.1]
+2023-09-01 16:30:41.001725 [debug]: /video/xxx.mp4
+2023-09-01 16:30:41.001784 [debug]: file path /home/nanisha/Webserver/resources//video/xxx.mp4
+2023-09-01 16:30:41.001842 [debug]: filesize:39667571, 2  to 39667698
+2023-09-01 16:30:41.006165 [info] : Client[18] quit!
+2023-09-01 16:30:41.006828 [info] : Client[18](127.0.0.1:6322) quit, UserCount:0
+2023-09-01 16:30:41.259915 [info] : Client[18](127.0.0.1:6834) in, userCount:1
+2023-09-01 16:30:41.260382 [info] : Client[18] in!
+2023-09-01 16:30:41.264606 [info] : Client[18] quit!
+2023-09-01 16:30:41.264772 [info] : Client[18](127.0.0.1:6834) quit, UserCount:0
+2023-09-01 16:30:41.767676 [info] : Client[18](127.0.0.1:7346) in, userCount:1
+2023-09-01 16:30:41.767859 [info] : Client[18] in!
+2023-09-01 16:30:41.768597 [debug]: [GET], [/video/xxx.mp4], [1.1]
+2023-09-01 16:30:41.768712 [debug]: /video/xxx.mp4
+2023-09-01 16:30:41.768765 [debug]: file path /home/nanisha/Webserver/resources//video/xxx.mp4
+2023-09-01 16:30:41.768799 [debug]: filesize:39667571, 2  to 39667698
+2023-09-01 16:30:41.772969 [info] : Client[18] quit!
+2023-09-01 16:30:41.773396 [info] : Client[18](127.0.0.1:7346) quit, UserCount:0
+2023-09-01 16:30:42.028556 [info] : Client[18](127.0.0.1:7858) in, userCount:1
+2023-09-01 16:30:42.028627 [info] : Client[18] in!
+2023-09-01 16:30:42.032757 [info] : Client[18] quit!
+2023-09-01 16:30:42.032871 [info] : Client[18](127.0.0.1:7858) quit, UserCount:0
+2023-09-01 16:30:42.590563 [info] : Client[18](127.0.0.1:8370) in, userCount:1
+2023-09-01 16:30:42.590655 [info] : Client[18] in!
+2023-09-01 16:30:42.591194 [debug]: [GET], [/video/xxx.mp4], [1.1]
+2023-09-01 16:30:42.591326 [debug]: /video/xxx.mp4
+2023-09-01 16:30:42.591397 [debug]: file path /home/nanisha/Webserver/resources//video/xxx.mp4
+2023-09-01 16:30:42.591432 [debug]: filesize:39667571, 2  to 39667698
+2023-09-01 16:30:42.595634 [info] : Client[18] quit!
+2023-09-01 16:30:42.595983 [info] : Client[18](127.0.0.1:8370) quit, UserCount:0
+2023-09-01 16:30:42.852755 [info] : Client[18](127.0.0.1:8882) in, userCount:1
+2023-09-01 16:30:42.852856 [info] : Client[18] in!
+2023-09-01 16:30:42.857002 [info] : Client[18] quit!
+2023-09-01 16:30:42.857182 [info] : Client[18](127.0.0.1:8882) quit, UserCount:0
+2023-09-01 16:30:43.334130 [info] : Client[18](127.0.0.1:9394) in, userCount:1
+2023-09-01 16:30:43.334205 [info] : Client[18] in!
+2023-09-01 16:30:43.334719 [debug]: [GET], [/video/xxx.mp4], [1.1]
+2023-09-01 16:30:43.334766 [debug]: /video/xxx.mp4
+2023-09-01 16:30:43.334782 [debug]: file path /home/nanisha/Webserver/resources//video/xxx.mp4
+2023-09-01 16:30:43.334794 [debug]: filesize:39667571, 2  to 39667698
+2023-09-01 16:30:43.339022 [info] : Client[18] quit!
+2023-09-01 16:30:43.339478 [info] : Client[18](127.0.0.1:9394) quit, UserCount:0
+2023-09-01 16:30:43.596300 [info] : Client[18](127.0.0.1:9906) in, userCount:1
+2023-09-01 16:30:43.596377 [info] : Client[18] in!
+2023-09-01 16:30:43.600602 [info] : Client[18] quit!
+2023-09-01 16:30:43.600724 [info] : Client[18](127.0.0.1:9906) quit, UserCount:0
+2023-09-01 16:30:44.077729 [info] : Client[18](127.0.0.1:10418) in, userCount:1
+2023-09-01 16:30:44.077811 [info] : Client[18] in!
+2023-09-01 16:30:44.078336 [debug]: [GET], [/video/xxx.mp4], [1.1]
+2023-09-01 16:30:44.078527 [debug]: /video/xxx.mp4
+2023-09-01 16:30:44.078581 [debug]: file path /home/nanisha/Webserver/resources//video/xxx.mp4
+2023-09-01 16:30:44.078596 [debug]: filesize:39667571, 2  to 39667698
+2023-09-01 16:30:44.082788 [info] : Client[18] quit!
+2023-09-01 16:30:44.083586 [info] : Client[18](127.0.0.1:10418) quit, UserCount:0
+2023-09-01 16:30:44.338530 [info] : Client[18](127.0.0.1:10930) in, userCount:1
+2023-09-01 16:30:44.338607 [info] : Client[18] in!
+2023-09-01 16:30:44.342784 [info] : Client[18] quit!
+2023-09-01 16:30:44.342870 [info] : Client[18](127.0.0.1:10930) quit, UserCount:0
+2023-09-01 16:30:44.865532 [info] : Client[18](127.0.0.1:11442) in, userCount:1
+2023-09-01 16:30:44.865649 [info] : Client[18] in!
+2023-09-01 16:30:44.866292 [debug]: [GET], [/video/xxx.mp4], [1.1]
+2023-09-01 16:30:44.866344 [debug]: /video/xxx.mp4
+2023-09-01 16:30:44.866359 [debug]: file path /home/nanisha/Webserver/resources//video/xxx.mp4
+2023-09-01 16:30:44.866399 [debug]: filesize:39667571, 2  to 39667698
+2023-09-01 16:30:44.870562 [info] : Client[18] quit!
+2023-09-01 16:30:44.871121 [info] : Client[18](127.0.0.1:11442) quit, UserCount:0
+2023-09-01 16:30:45.128305 [info] : Client[18](127.0.0.1:11954) in, userCount:1
+2023-09-01 16:30:45.128377 [info] : Client[18] in!
+2023-09-01 16:30:45.132570 [info] : Client[18] quit!
+2023-09-01 16:30:45.132688 [info] : Client[18](127.0.0.1:11954) quit, UserCount:0
+2023-09-01 16:30:45.689815 [info] : Client[18](127.0.0.1:12466) in, userCount:1
+2023-09-01 16:30:45.689889 [info] : Client[18] in!
+2023-09-01 16:30:45.690379 [debug]: [GET], [/video/xxx.mp4], [1.1]
+2023-09-01 16:30:45.690433 [debug]: /video/xxx.mp4
+2023-09-01 16:30:45.690448 [debug]: file path /home/nanisha/Webserver/resources//video/xxx.mp4
+2023-09-01 16:30:45.690480 [debug]: filesize:39667571, 2  to 39667698
+2023-09-01 16:30:45.694702 [info] : Client[18] quit!
+2023-09-01 16:30:45.695059 [info] : Client[18](127.0.0.1:12466) quit, UserCount:0
+2023-09-01 16:30:45.953133 [info] : Client[18](127.0.0.1:12978) in, userCount:1
+2023-09-01 16:30:45.953206 [info] : Client[18] in!
+2023-09-01 16:30:45.957322 [info] : Client[18] quit!
+2023-09-01 16:30:45.957501 [info] : Client[18](127.0.0.1:12978) quit, UserCount:0
+2023-09-01 16:30:46.544067 [info] : Client[18](127.0.0.1:13490) in, userCount:1
+2023-09-01 16:30:46.544138 [info] : Client[18] in!
+2023-09-01 16:30:46.544804 [debug]: [GET], [/video/xxx.mp4], [1.1]
+2023-09-01 16:30:46.544850 [debug]: /video/xxx.mp4
+2023-09-01 16:30:46.544864 [debug]: file path /home/nanisha/Webserver/resources//video/xxx.mp4
+2023-09-01 16:30:46.544876 [debug]: filesize:39667571, 2  to 39667698
+2023-09-01 16:30:46.549086 [info] : Client[18] quit!
+2023-09-01 16:30:46.549558 [info] : Client[18](127.0.0.1:13490) quit, UserCount:0
+2023-09-01 16:30:46.806109 [info] : Client[18](127.0.0.1:14002) in, userCount:1
+2023-09-01 16:30:46.806187 [info] : Client[18] in!
+2023-09-01 16:30:46.810346 [info] : Client[18] quit!
+2023-09-01 16:30:46.810418 [info] : Client[18](127.0.0.1:14002) quit, UserCount:0
+2023-09-01 16:30:47.302237 [info] : Client[18](127.0.0.1:14514) in, userCount:1
+2023-09-01 16:30:47.302308 [info] : Client[18] in!
+2023-09-01 16:30:47.302742 [debug]: [GET], [/video/xxx.mp4], [1.1]
+2023-09-01 16:30:47.302788 [debug]: /video/xxx.mp4
+2023-09-01 16:30:47.302803 [debug]: file path /home/nanisha/Webserver/resources//video/xxx.mp4
+2023-09-01 16:30:47.302814 [debug]: filesize:39667571, 2  to 39667698
+2023-09-01 16:30:47.307054 [info] : Client[18] quit!
+2023-09-01 16:30:47.307744 [info] : Client[18](127.0.0.1:14514) quit, UserCount:0
+2023-09-01 16:30:47.564201 [info] : Client[18](127.0.0.1:15026) in, userCount:1
+2023-09-01 16:30:47.564280 [info] : Client[18] in!
+2023-09-01 16:30:47.568390 [info] : Client[18] quit!
+2023-09-01 16:30:47.568517 [info] : Client[18](127.0.0.1:15026) quit, UserCount:0
+2023-09-01 16:30:48.090630 [info] : Client[18](127.0.0.1:15538) in, userCount:1
+2023-09-01 16:30:48.090702 [info] : Client[18] in!
+2023-09-01 16:30:48.091251 [debug]: [GET], [/video/xxx.mp4], [1.1]
+2023-09-01 16:30:48.091296 [debug]: /video/xxx.mp4
+2023-09-01 16:30:48.091311 [debug]: file path /home/nanisha/Webserver/resources//video/xxx.mp4
+2023-09-01 16:30:48.091323 [debug]: filesize:39667571, 2  to 39667698
+2023-09-01 16:30:48.098223 [info] : Client[18] quit!
+2023-09-01 16:30:48.098540 [info] : Client[18](127.0.0.1:15538) quit, UserCount:0
+2023-09-01 16:30:48.098976 [info] : Client[18] quit!
+2023-09-01 16:30:48.352155 [info] : Client[18](127.0.0.1:16050) in, userCount:1
+2023-09-01 16:30:48.352229 [info] : Client[18] in!
+2023-09-01 16:30:48.356497 [info] : Client[18] quit!
+2023-09-01 16:30:48.356620 [info] : Client[18](127.0.0.1:16050) quit, UserCount:0
+2023-09-01 16:30:49.081080 [info] : Client[18](127.0.0.1:16562) in, userCount:1
+2023-09-01 16:30:49.081155 [info] : Client[18] in!
+2023-09-01 16:30:49.081714 [debug]: [GET], [/video/xxx.mp4], [1.1]
+2023-09-01 16:30:49.081858 [debug]: /video/xxx.mp4
+2023-09-01 16:30:49.081923 [debug]: file path /home/nanisha/Webserver/resources//video/xxx.mp4
+2023-09-01 16:30:49.081937 [debug]: filesize:39667571, 2  to 39667698
+2023-09-01 16:30:49.086115 [info] : Client[18] quit!
+2023-09-01 16:30:49.086420 [info] : Client[18](127.0.0.1:16562) quit, UserCount:0
+2023-09-01 16:30:49.342234 [info] : Client[18](127.0.0.1:17074) in, userCount:1
+2023-09-01 16:30:49.342309 [info] : Client[18] in!
+2023-09-01 16:30:49.346396 [info] : Client[18] quit!
+2023-09-01 16:30:49.346475 [info] : Client[18](127.0.0.1:17074) quit, UserCount:0
+2023-09-01 16:30:50.202485 [info] : Client[18](127.0.0.1:17586) in, userCount:1
+2023-09-01 16:30:50.202586 [info] : Client[18] in!
+2023-09-01 16:30:50.203546 [debug]: [GET], [/video/xxx.mp4], [1.1]
+2023-09-01 16:30:50.203644 [debug]: /video/xxx.mp4
+2023-09-01 16:30:50.203684 [debug]: file path /home/nanisha/Webserver/resources//video/xxx.mp4
+2023-09-01 16:30:50.203718 [debug]: filesize:39667571, 2  to 39667698
+2023-09-01 16:30:50.207958 [info] : Client[18] quit!
+2023-09-01 16:30:50.208339 [info] : Client[18](127.0.0.1:17586) quit, UserCount:0
+2023-09-01 16:30:50.209433 [info] : Client[18] quit!
+2023-09-01 16:30:50.464879 [info] : Client[18](127.0.0.1:18098) in, userCount:1
+2023-09-01 16:30:50.464959 [info] : Client[18] in!
+2023-09-01 16:30:50.469138 [info] : Client[18] quit!
+2023-09-01 16:30:50.469368 [info] : Client[18](127.0.0.1:18098) quit, UserCount:0
+2023-09-01 16:30:50.949475 [info] : Client[18](127.0.0.1:18610) in, userCount:1
+2023-09-01 16:30:50.949580 [info] : Client[18] in!
+2023-09-01 16:30:50.950231 [debug]: [GET], [/video/xxx.mp4], [1.1]
+2023-09-01 16:30:50.950410 [debug]: /video/xxx.mp4
+2023-09-01 16:30:50.950697 [debug]: file path /home/nanisha/Webserver/resources//video/xxx.mp4
+2023-09-01 16:30:50.950810 [debug]: filesize:39667571, 2  to 39667698
+2023-09-01 16:30:50.955012 [info] : Client[18] quit!
+2023-09-01 16:30:50.955350 [info] : Client[18](127.0.0.1:18610) quit, UserCount:0
+2023-09-01 16:30:51.201982 [info] : Client[18](127.0.0.1:19122) in, userCount:1
+2023-09-01 16:30:51.202080 [info] : Client[18] in!
+2023-09-01 16:30:51.206297 [info] : Client[18] quit!
+2023-09-01 16:30:51.206410 [info] : Client[18](127.0.0.1:19122) quit, UserCount:0
+2023-09-01 16:30:51.745682 [info] : Client[18](127.0.0.1:19634) in, userCount:1
+2023-09-01 16:30:51.745759 [info] : Client[18] in!
+2023-09-01 16:30:51.746301 [debug]: [GET], [/video/xxx.mp4], [1.1]
+2023-09-01 16:30:51.746363 [debug]: /video/xxx.mp4
+2023-09-01 16:30:51.746380 [debug]: file path /home/nanisha/Webserver/resources//video/xxx.mp4
+2023-09-01 16:30:51.746424 [debug]: filesize:39667571, 2  to 39667698
+2023-09-01 16:30:51.750596 [info] : Client[18] quit!
+2023-09-01 16:30:51.750887 [info] : Client[18](127.0.0.1:19634) quit, UserCount:0
+2023-09-01 16:30:52.009950 [info] : Client[18](127.0.0.1:20146) in, userCount:1
+2023-09-01 16:30:52.010077 [info] : Client[18] in!
+2023-09-01 16:30:52.014264 [info] : Client[18] quit!
+2023-09-01 16:30:52.014383 [info] : Client[18](127.0.0.1:20146) quit, UserCount:0
+2023-09-01 16:30:52.553972 [info] : Client[18](127.0.0.1:20658) in, userCount:1
+2023-09-01 16:30:52.554314 [info] : Client[18] in!
+2023-09-01 16:30:52.555024 [debug]: [GET], [/video/xxx.mp4], [1.1]
+2023-09-01 16:30:52.555170 [debug]: /video/xxx.mp4
+2023-09-01 16:30:52.555221 [debug]: file path /home/nanisha/Webserver/resources//video/xxx.mp4
+2023-09-01 16:30:52.555238 [debug]: filesize:39667571, 2  to 39667698
+2023-09-01 16:30:52.559407 [info] : Client[18] quit!
+2023-09-01 16:30:52.559738 [info] : Client[18](127.0.0.1:20658) quit, UserCount:0
+2023-09-01 16:30:52.815960 [info] : Client[18](127.0.0.1:21170) in, userCount:1
+2023-09-01 16:30:52.816056 [info] : Client[18] in!
+2023-09-01 16:30:52.820197 [info] : Client[18] quit!
+2023-09-01 16:30:52.820339 [info] : Client[18](127.0.0.1:21170) quit, UserCount:0
+2023-09-01 16:30:53.377809 [info] : Client[18](127.0.0.1:21682) in, userCount:1
+2023-09-01 16:30:53.378014 [info] : Client[18] in!
+2023-09-01 16:30:53.378652 [debug]: [GET], [/video/xxx.mp4], [1.1]
+2023-09-01 16:30:53.378721 [debug]: /video/xxx.mp4
+2023-09-01 16:30:53.378741 [debug]: file path /home/nanisha/Webserver/resources//video/xxx.mp4
+2023-09-01 16:30:53.378781 [debug]: filesize:39667571, 2  to 39667698
+2023-09-01 16:30:53.383025 [info] : Client[18] quit!
+2023-09-01 16:30:53.383328 [info] : Client[18](127.0.0.1:21682) quit, UserCount:0
+2023-09-01 16:30:53.638438 [info] : Client[18](127.0.0.1:22194) in, userCount:1
+2023-09-01 16:30:53.638718 [info] : Client[18] in!
+2023-09-01 16:30:53.643013 [info] : Client[18] quit!
+2023-09-01 16:30:53.643147 [info] : Client[18](127.0.0.1:22194) quit, UserCount:0
+2023-09-01 16:30:54.315168 [info] : Client[18](127.0.0.1:22706) in, userCount:1
+2023-09-01 16:30:54.315307 [info] : Client[18] in!
+2023-09-01 16:30:54.315842 [debug]: [GET], [/video/xxx.mp4], [1.1]
+2023-09-01 16:30:54.315889 [debug]: /video/xxx.mp4
+2023-09-01 16:30:54.315904 [debug]: file path /home/nanisha/Webserver/resources//video/xxx.mp4
+2023-09-01 16:30:54.315916 [debug]: filesize:39667571, 2  to 39667698
+2023-09-01 16:30:54.320103 [info] : Client[18] quit!
+2023-09-01 16:30:54.320385 [info] : Client[18](127.0.0.1:22706) quit, UserCount:0
+2023-09-01 16:30:54.575151 [info] : Client[18](127.0.0.1:23218) in, userCount:1
+2023-09-01 16:30:54.575386 [info] : Client[18] in!
+2023-09-01 16:30:54.579646 [info] : Client[18] quit!
+2023-09-01 16:30:54.579772 [info] : Client[18](127.0.0.1:23218) quit, UserCount:0
+2023-09-01 16:30:55.272376 [info] : Client[18](127.0.0.1:23730) in, userCount:1
+2023-09-01 16:30:55.272451 [info] : Client[18] in!
+2023-09-01 16:30:55.272959 [debug]: [GET], [/video/xxx.mp4], [1.1]
+2023-09-01 16:30:55.273007 [debug]: /video/xxx.mp4
+2023-09-01 16:30:55.273022 [debug]: file path /home/nanisha/Webserver/resources//video/xxx.mp4
+2023-09-01 16:30:55.273034 [debug]: filesize:39667571, 2  to 39667698
+2023-09-01 16:30:55.277222 [info] : Client[18] quit!
+2023-09-01 16:30:55.277537 [info] : Client[18](127.0.0.1:23730) quit, UserCount:0
+2023-09-01 16:30:55.533987 [info] : Client[18](127.0.0.1:24242) in, userCount:1
+2023-09-01 16:30:55.534245 [info] : Client[18] in!
+2023-09-01 16:30:55.538360 [info] : Client[18] quit!
+2023-09-01 16:30:55.538467 [info] : Client[18](127.0.0.1:24242) quit, UserCount:0
+2023-09-01 16:30:56.345428 [info] : Client[18](127.0.0.1:24754) in, userCount:1
+2023-09-01 16:30:56.345663 [info] : Client[18] in!
+2023-09-01 16:30:56.346262 [debug]: [GET], [/video/xxx.mp4], [1.1]
+2023-09-01 16:30:56.346316 [debug]: /video/xxx.mp4
+2023-09-01 16:30:56.346331 [debug]: file path /home/nanisha/Webserver/resources//video/xxx.mp4
+2023-09-01 16:30:56.346345 [debug]: filesize:39667571, 2  to 39667698
+2023-09-01 16:30:56.350565 [info] : Client[18] quit!
+2023-09-01 16:30:56.350959 [info] : Client[18](127.0.0.1:24754) quit, UserCount:0
+2023-09-01 16:30:56.607244 [info] : Client[18](127.0.0.1:25266) in, userCount:1
+2023-09-01 16:30:56.607349 [info] : Client[18] in!
+2023-09-01 16:30:56.611479 [info] : Client[18] quit!
+2023-09-01 16:30:56.611605 [info] : Client[18](127.0.0.1:25266) quit, UserCount:0
+2023-09-01 16:30:57.417576 [info] : Client[18](127.0.0.1:25778) in, userCount:1
+2023-09-01 16:30:57.417686 [info] : Client[18] in!
+2023-09-01 16:30:57.418234 [debug]: [GET], [/video/xxx.mp4], [1.1]
+2023-09-01 16:30:57.418435 [debug]: /video/xxx.mp4
+2023-09-01 16:30:57.418802 [debug]: file path /home/nanisha/Webserver/resources//video/xxx.mp4
+2023-09-01 16:30:57.419077 [debug]: filesize:39667571, 2  to 39667698
+2023-09-01 16:30:57.423746 [info] : Client[18] quit!
+2023-09-01 16:30:57.424217 [info] : Client[18](127.0.0.1:25778) quit, UserCount:0
+2023-09-01 16:30:57.682813 [info] : Client[18](127.0.0.1:26290) in, userCount:1
+2023-09-01 16:30:57.683142 [info] : Client[18] in!
+2023-09-01 16:30:57.687404 [info] : Client[18] quit!
+2023-09-01 16:30:57.687566 [info] : Client[18](127.0.0.1:26290) quit, UserCount:0
+2023-09-01 16:30:58.569950 [info] : Client[18](127.0.0.1:26802) in, userCount:1
+2023-09-01 16:30:58.570026 [info] : Client[18] in!
+2023-09-01 16:30:58.570544 [debug]: [GET], [/video/xxx.mp4], [1.1]
+2023-09-01 16:30:58.570590 [debug]: /video/xxx.mp4
+2023-09-01 16:30:58.570605 [debug]: file path /home/nanisha/Webserver/resources//video/xxx.mp4
+2023-09-01 16:30:58.570617 [debug]: filesize:39667571, 2  to 39667698
+2023-09-01 16:30:58.574801 [info] : Client[18] quit!
+2023-09-01 16:30:58.575339 [info] : Client[18](127.0.0.1:26802) quit, UserCount:0
+2023-09-01 16:30:58.632322 [info] : Client[18] quit!
+2023-09-01 16:30:58.838671 [info] : Client[18](127.0.0.1:27314) in, userCount:1
+2023-09-01 16:30:58.838916 [info] : Client[18] in!
+2023-09-01 16:30:58.843194 [info] : Client[18] quit!
+2023-09-01 16:30:58.843351 [info] : Client[18](127.0.0.1:27314) quit, UserCount:0
+2023-09-01 16:30:59.335244 [info] : Client[18](127.0.0.1:27826) in, userCount:1
+2023-09-01 16:30:59.335347 [info] : Client[18] in!
+2023-09-01 16:30:59.336007 [debug]: [GET], [/video/xxx.mp4], [1.1]
+2023-09-01 16:30:59.336092 [debug]: /video/xxx.mp4
+2023-09-01 16:30:59.336112 [debug]: file path /home/nanisha/Webserver/resources//video/xxx.mp4
+2023-09-01 16:30:59.336165 [debug]: filesize:39667571, 2  to 39667698
+2023-09-01 16:30:59.340404 [info] : Client[18] quit!
+2023-09-01 16:30:59.341731 [info] : Client[18](127.0.0.1:27826) quit, UserCount:0
+2023-09-01 16:30:59.600229 [info] : Client[18](127.0.0.1:28338) in, userCount:1
+2023-09-01 16:30:59.600352 [info] : Client[18] in!
+2023-09-01 16:30:59.604504 [info] : Client[18] quit!
+2023-09-01 16:30:59.604636 [info] : Client[18](127.0.0.1:28338) quit, UserCount:0
+2023-09-01 16:31:00.112829 [info] : Client[18](127.0.0.1:28850) in, userCount:1
+2023-09-01 16:31:00.112926 [info] : Client[18] in!
+2023-09-01 16:31:00.113454 [debug]: [GET], [/video/xxx.mp4], [1.1]
+2023-09-01 16:31:00.113518 [debug]: /video/xxx.mp4
+2023-09-01 16:31:00.113538 [debug]: file path /home/nanisha/Webserver/resources//video/xxx.mp4
+2023-09-01 16:31:00.113581 [debug]: filesize:39667571, 2  to 39667698
+2023-09-01 16:31:00.117837 [info] : Client[18] quit!
+2023-09-01 16:31:00.118534 [info] : Client[18](127.0.0.1:28850) quit, UserCount:0
+2023-09-01 16:31:00.378726 [info] : Client[18](127.0.0.1:29362) in, userCount:1
+2023-09-01 16:31:00.378838 [info] : Client[18] in!
+2023-09-01 16:31:00.383069 [info] : Client[18] quit!
+2023-09-01 16:31:00.383191 [info] : Client[18](127.0.0.1:29362) quit, UserCount:0
+2023-09-01 16:31:00.921252 [info] : Client[18](127.0.0.1:29874) in, userCount:1
+2023-09-01 16:31:00.921329 [info] : Client[18] in!
+2023-09-01 16:31:00.921871 [debug]: [GET], [/video/xxx.mp4], [1.1]
+2023-09-01 16:31:00.921935 [debug]: /video/xxx.mp4
+2023-09-01 16:31:00.921952 [debug]: file path /home/nanisha/Webserver/resources//video/xxx.mp4
+2023-09-01 16:31:00.921987 [debug]: filesize:39667571, 2  to 39667698
+2023-09-01 16:31:00.926213 [info] : Client[18] quit!
+2023-09-01 16:31:00.927025 [info] : Client[18](127.0.0.1:29874) quit, UserCount:0
+2023-09-01 16:31:01.187100 [info] : Client[18](127.0.0.1:30386) in, userCount:1
+2023-09-01 16:31:01.187188 [info] : Client[18] in!
+2023-09-01 16:31:01.191343 [info] : Client[18] quit!
+2023-09-01 16:31:01.191488 [info] : Client[18](127.0.0.1:30386) quit, UserCount:0
+2023-09-01 16:31:01.806563 [info] : Client[18](127.0.0.1:30898) in, userCount:1
+2023-09-01 16:31:01.806632 [info] : Client[18] in!
+2023-09-01 16:31:01.807150 [debug]: [GET], [/video/xxx.mp4], [1.1]
+2023-09-01 16:31:01.807194 [debug]: /video/xxx.mp4
+2023-09-01 16:31:01.807208 [debug]: file path /home/nanisha/Webserver/resources//video/xxx.mp4
+2023-09-01 16:31:01.807220 [debug]: filesize:39667571, 2  to 39667698
+2023-09-01 16:31:01.811460 [info] : Client[18] quit!
+2023-09-01 16:31:01.811817 [info] : Client[18](127.0.0.1:30898) quit, UserCount:0
+2023-09-01 16:31:02.070414 [info] : Client[18](127.0.0.1:31410) in, userCount:1
+2023-09-01 16:31:02.070640 [info] : Client[18] in!
+2023-09-01 16:31:02.074887 [info] : Client[18] quit!
+2023-09-01 16:31:02.075041 [info] : Client[18](127.0.0.1:31410) quit, UserCount:0
+2023-09-01 16:31:02.765095 [info] : Client[18](127.0.0.1:31922) in, userCount:1
+2023-09-01 16:31:02.765177 [info] : Client[18] in!
+2023-09-01 16:31:02.765683 [debug]: [GET], [/video/xxx.mp4], [1.1]
+2023-09-01 16:31:02.765737 [debug]: /video/xxx.mp4
+2023-09-01 16:31:02.765753 [debug]: file path /home/nanisha/Webserver/resources//video/xxx.mp4
+2023-09-01 16:31:02.765787 [debug]: filesize:39667571, 2  to 39667698
+2023-09-01 16:31:02.769976 [info] : Client[18] quit!
+2023-09-01 16:31:02.770529 [info] : Client[18](127.0.0.1:31922) quit, UserCount:0
+2023-09-01 16:31:03.013110 [info] : Client[18](127.0.0.1:32434) in, userCount:1
+2023-09-01 16:31:03.013185 [info] : Client[18] in!
+2023-09-01 16:31:03.017466 [info] : Client[18] quit!
+2023-09-01 16:31:03.017586 [info] : Client[18](127.0.0.1:32434) quit, UserCount:0
+2023-09-01 16:31:03.768606 [info] : Client[18](127.0.0.1:32946) in, userCount:1
+2023-09-01 16:31:03.768682 [info] : Client[18] in!
+2023-09-01 16:31:03.769192 [debug]: [GET], [/video/xxx.mp4], [1.1]
+2023-09-01 16:31:03.769239 [debug]: /video/xxx.mp4
+2023-09-01 16:31:03.769254 [debug]: file path /home/nanisha/Webserver/resources//video/xxx.mp4
+2023-09-01 16:31:03.769266 [debug]: filesize:39667571, 2  to 39667698
+2023-09-01 16:31:03.773453 [info] : Client[18] quit!
+2023-09-01 16:31:03.773735 [info] : Client[18](127.0.0.1:32946) quit, UserCount:0
+2023-09-01 16:31:04.030505 [info] : Client[18](127.0.0.1:33458) in, userCount:1
+2023-09-01 16:31:04.030582 [info] : Client[18] in!
+2023-09-01 16:31:04.034802 [info] : Client[18] quit!
+2023-09-01 16:31:04.034961 [info] : Client[18](127.0.0.1:33458) quit, UserCount:0
+2023-09-01 16:31:04.785205 [info] : Client[18](127.0.0.1:33970) in, userCount:1
+2023-09-01 16:31:04.785295 [info] : Client[18] in!
+2023-09-01 16:31:04.785808 [debug]: [GET], [/video/xxx.mp4], [1.1]
+2023-09-01 16:31:04.785997 [debug]: /video/xxx.mp4
+2023-09-01 16:31:04.786058 [debug]: file path /home/nanisha/Webserver/resources//video/xxx.mp4
+2023-09-01 16:31:04.786074 [debug]: filesize:39667571, 2  to 39667698
+2023-09-01 16:31:04.790284 [info] : Client[18] quit!
+2023-09-01 16:31:04.790730 [info] : Client[18](127.0.0.1:33970) quit, UserCount:0
+2023-09-01 16:31:05.049920 [info] : Client[18](127.0.0.1:34482) in, userCount:1
+2023-09-01 16:31:05.050088 [info] : Client[18] in!
+2023-09-01 16:31:05.054280 [info] : Client[18] quit!
+2023-09-01 16:31:05.054617 [info] : Client[18](127.0.0.1:34482) quit, UserCount:0
+2023-09-01 16:31:05.850115 [info] : Client[18](127.0.0.1:34994) in, userCount:1
+2023-09-01 16:31:05.850228 [info] : Client[18] in!
+2023-09-01 16:31:05.850797 [debug]: [GET], [/video/xxx.mp4], [1.1]
+2023-09-01 16:31:05.850911 [debug]: /video/xxx.mp4
+2023-09-01 16:31:05.850991 [debug]: file path /home/nanisha/Webserver/resources//video/xxx.mp4
+2023-09-01 16:31:05.851032 [debug]: filesize:39667571, 2  to 39667698
+2023-09-01 16:31:05.855246 [info] : Client[18] quit!
+2023-09-01 16:31:05.855808 [info] : Client[18](127.0.0.1:34994) quit, UserCount:0
+2023-09-01 16:31:06.111335 [info] : Client[18](127.0.0.1:35506) in, userCount:1
+2023-09-01 16:31:06.111436 [info] : Client[18] in!
+2023-09-01 16:31:06.115643 [info] : Client[18] quit!
+2023-09-01 16:31:06.115776 [info] : Client[18](127.0.0.1:35506) quit, UserCount:0
+2023-09-01 16:31:06.948613 [info] : Client[18](127.0.0.1:36018) in, userCount:1
+2023-09-01 16:31:06.948796 [info] : Client[18] in!
+2023-09-01 16:31:06.949593 [debug]: [GET], [/video/xxx.mp4], [1.1]
+2023-09-01 16:31:06.949664 [debug]: /video/xxx.mp4
+2023-09-01 16:31:06.949690 [debug]: file path /home/nanisha/Webserver/resources//video/xxx.mp4
+2023-09-01 16:31:06.949732 [debug]: filesize:39667571, 2  to 39667698
+2023-09-01 16:31:06.953952 [info] : Client[18] quit!
+2023-09-01 16:31:06.954774 [info] : Client[18](127.0.0.1:36018) quit, UserCount:0
+2023-09-01 16:31:07.211233 [info] : Client[18](127.0.0.1:36530) in, userCount:1
+2023-09-01 16:31:07.211512 [info] : Client[18] in!
+2023-09-01 16:31:07.215771 [info] : Client[18] quit!
+2023-09-01 16:31:07.216123 [info] : Client[18](127.0.0.1:36530) quit, UserCount:0
+2023-09-01 16:31:08.203718 [info] : Client[18](127.0.0.1:37042) in, userCount:1
+2023-09-01 16:31:08.203911 [info] : Client[18] in!
+2023-09-01 16:31:08.204458 [debug]: [GET], [/video/xxx.mp4], [1.1]
+2023-09-01 16:31:08.204505 [debug]: /video/xxx.mp4
+2023-09-01 16:31:08.204520 [debug]: file path /home/nanisha/Webserver/resources//video/xxx.mp4
+2023-09-01 16:31:08.204533 [debug]: filesize:39667571, 2  to 39667698
+2023-09-01 16:31:08.208672 [info] : Client[18] quit!
+2023-09-01 16:31:08.209018 [info] : Client[18](127.0.0.1:37042) quit, UserCount:0
+2023-09-01 16:31:08.465403 [info] : Client[18](127.0.0.1:37554) in, userCount:1
+2023-09-01 16:31:08.465476 [info] : Client[18] in!
+2023-09-01 16:31:08.469632 [info] : Client[18] quit!
+2023-09-01 16:31:08.469861 [info] : Client[18](127.0.0.1:37554) quit, UserCount:0
+2023-09-01 16:31:09.464012 [info] : Client[18](127.0.0.1:38066) in, userCount:1
+2023-09-01 16:31:09.464090 [info] : Client[18] in!
+2023-09-01 16:31:09.464619 [debug]: [GET], [/video/xxx.mp4], [1.1]
+2023-09-01 16:31:09.464677 [debug]: /video/xxx.mp4
+2023-09-01 16:31:09.464693 [debug]: file path /home/nanisha/Webserver/resources//video/xxx.mp4
+2023-09-01 16:31:09.464705 [debug]: filesize:39667571, 2  to 39667698
+2023-09-01 16:31:09.468903 [info] : Client[18] quit!
+2023-09-01 16:31:09.469593 [info] : Client[18](127.0.0.1:38066) quit, UserCount:0
+2023-09-01 16:31:09.727484 [info] : Client[18](127.0.0.1:38578) in, userCount:1
+2023-09-01 16:31:09.727556 [info] : Client[18] in!
+2023-09-01 16:31:09.731751 [info] : Client[18] quit!
+2023-09-01 16:31:09.731874 [info] : Client[18](127.0.0.1:38578) quit, UserCount:0
+2023-09-01 16:31:10.735905 [info] : Client[18](127.0.0.1:39090) in, userCount:1
+2023-09-01 16:31:10.735988 [info] : Client[18] in!
+2023-09-01 16:31:10.736527 [debug]: [GET], [/video/xxx.mp4], [1.1]
+2023-09-01 16:31:10.736677 [debug]: /video/xxx.mp4
+2023-09-01 16:31:10.736771 [debug]: file path /home/nanisha/Webserver/resources//video/xxx.mp4
+2023-09-01 16:31:10.736841 [debug]: filesize:39667571, 2  to 39667698
+2023-09-01 16:31:10.742508 [info] : Client[18] quit!
+2023-09-01 16:31:10.743163 [info] : Client[18](127.0.0.1:39090) quit, UserCount:0
+2023-09-01 16:31:10.999888 [info] : Client[18](127.0.0.1:39602) in, userCount:1
+2023-09-01 16:31:10.999963 [info] : Client[18] in!
+2023-09-01 16:31:11.004114 [info] : Client[18] quit!
+2023-09-01 16:31:11.004209 [info] : Client[18](127.0.0.1:39602) quit, UserCount:0
+2023-09-01 16:31:12.055764 [info] : Client[18](127.0.0.1:40114) in, userCount:1
+2023-09-01 16:31:12.055834 [info] : Client[18] in!
+2023-09-01 16:31:12.056339 [debug]: [GET], [/video/xxx.mp4], [1.1]
+2023-09-01 16:31:12.056386 [debug]: /video/xxx.mp4
+2023-09-01 16:31:12.056401 [debug]: file path /home/nanisha/Webserver/resources//video/xxx.mp4
+2023-09-01 16:31:12.056413 [debug]: filesize:39667571, 2  to 39667698
+2023-09-01 16:31:12.060635 [info] : Client[18] quit!
+2023-09-01 16:31:12.061214 [info] : Client[18](127.0.0.1:40114) quit, UserCount:0
+2023-09-01 16:31:12.316045 [info] : Client[18](127.0.0.1:40626) in, userCount:1
+2023-09-01 16:31:12.316089 [info] : Client[18] in!
+2023-09-01 16:31:12.320182 [info] : Client[18] quit!
+2023-09-01 16:31:12.320278 [info] : Client[18](127.0.0.1:40626) quit, UserCount:0
+2023-09-01 16:31:13.424892 [info] : Client[18](127.0.0.1:41138) in, userCount:1
+2023-09-01 16:31:13.424968 [info] : Client[18] in!
+2023-09-01 16:31:13.425494 [debug]: [GET], [/video/xxx.mp4], [1.1]
+2023-09-01 16:31:13.425543 [debug]: /video/xxx.mp4
+2023-09-01 16:31:13.425559 [debug]: file path /home/nanisha/Webserver/resources//video/xxx.mp4
+2023-09-01 16:31:13.425571 [debug]: filesize:39667571, 2  to 39667698
+2023-09-01 16:31:13.429745 [info] : Client[18] quit!
+2023-09-01 16:31:13.430514 [info] : Client[18](127.0.0.1:41138) quit, UserCount:0
+2023-09-01 16:31:13.688225 [info] : Client[18](127.0.0.1:41650) in, userCount:1
+2023-09-01 16:31:13.688368 [info] : Client[18] in!
+2023-09-01 16:31:13.692553 [info] : Client[18] quit!
+2023-09-01 16:31:13.692643 [info] : Client[18](127.0.0.1:41650) quit, UserCount:0
+2023-09-01 16:31:15.175255 [info] : Client[18](127.0.0.1:42162) in, userCount:1
+2023-09-01 16:31:15.175365 [info] : Client[18] in!
+2023-09-01 16:31:15.175891 [debug]: [GET], [/video/xxx.mp4], [1.1]
+2023-09-01 16:31:15.176095 [debug]: /video/xxx.mp4
+2023-09-01 16:31:15.176186 [debug]: file path /home/nanisha/Webserver/resources//video/xxx.mp4
+2023-09-01 16:31:15.176200 [debug]: filesize:39667571, 2  to 39667698
+2023-09-01 16:31:15.180405 [info] : Client[18] quit!
+2023-09-01 16:31:15.180713 [info] : Client[18](127.0.0.1:42162) quit, UserCount:0
+2023-09-01 16:31:15.437418 [info] : Client[18](127.0.0.1:42674) in, userCount:1
+2023-09-01 16:31:15.437515 [info] : Client[18] in!
+2023-09-01 16:31:15.441650 [info] : Client[18] quit!
+2023-09-01 16:31:15.441731 [info] : Client[18](127.0.0.1:42674) quit, UserCount:0
+2023-09-01 16:31:16.651553 [info] : Client[18](127.0.0.1:43186) in, userCount:1
+2023-09-01 16:31:16.651663 [info] : Client[18] in!
+2023-09-01 16:31:16.652190 [debug]: [GET], [/video/xxx.mp4], [1.1]
+2023-09-01 16:31:16.652242 [debug]: /video/xxx.mp4
+2023-09-01 16:31:16.652258 [debug]: file path /home/nanisha/Webserver/resources//video/xxx.mp4
+2023-09-01 16:31:16.652298 [debug]: filesize:39667571, 2  to 39667698
+2023-09-01 16:31:16.656443 [info] : Client[18] quit!
+2023-09-01 16:31:16.656707 [info] : Client[18](127.0.0.1:43186) quit, UserCount:0
+2023-09-01 16:31:16.897913 [info] : Client[18](127.0.0.1:43698) in, userCount:1
+2023-09-01 16:31:16.897991 [info] : Client[18] in!
+2023-09-01 16:31:16.902083 [info] : Client[18] quit!
+2023-09-01 16:31:16.902169 [info] : Client[18](127.0.0.1:43698) quit, UserCount:0
+2023-09-01 16:31:18.154474 [info] : Client[18](127.0.0.1:44210) in, userCount:1
+2023-09-01 16:31:18.154578 [info] : Client[18] in!
+2023-09-01 16:31:18.155182 [debug]: [GET], [/video/xxx.mp4], [1.1]
+2023-09-01 16:31:18.155234 [debug]: /video/xxx.mp4
+2023-09-01 16:31:18.155251 [debug]: file path /home/nanisha/Webserver/resources//video/xxx.mp4
+2023-09-01 16:31:18.155294 [debug]: filesize:39667571, 2  to 39667698
+2023-09-01 16:31:18.159549 [info] : Client[18] quit!
+2023-09-01 16:31:18.159889 [info] : Client[18](127.0.0.1:44210) quit, UserCount:0
+2023-09-01 16:31:18.417883 [info] : Client[18](127.0.0.1:44722) in, userCount:1
+2023-09-01 16:31:18.417989 [info] : Client[18] in!
+2023-09-01 16:31:18.422167 [info] : Client[18] quit!
+2023-09-01 16:31:18.422391 [info] : Client[18](127.0.0.1:44722) quit, UserCount:0
+2023-09-01 16:31:19.721207 [info] : Client[18](127.0.0.1:45234) in, userCount:1
+2023-09-01 16:31:19.721281 [info] : Client[18] in!
+2023-09-01 16:31:19.721794 [debug]: [GET], [/video/xxx.mp4], [1.1]
+2023-09-01 16:31:19.721841 [debug]: /video/xxx.mp4
+2023-09-01 16:31:19.721856 [debug]: file path /home/nanisha/Webserver/resources//video/xxx.mp4
+2023-09-01 16:31:19.721868 [debug]: filesize:39667571, 2  to 39667698
+2023-09-01 16:31:19.726062 [info] : Client[18] quit!
+2023-09-01 16:31:19.726567 [info] : Client[18](127.0.0.1:45234) quit, UserCount:0
+2023-09-01 16:31:19.983754 [info] : Client[18](127.0.0.1:45746) in, userCount:1
+2023-09-01 16:31:19.983835 [info] : Client[18] in!
+2023-09-01 16:31:19.987932 [info] : Client[18] quit!
+2023-09-01 16:31:19.988079 [info] : Client[18](127.0.0.1:45746) quit, UserCount:0
+2023-09-01 16:31:20.481661 [info] : Client[18](127.0.0.1:46258) in, userCount:1
+2023-09-01 16:31:20.481756 [info] : Client[18] in!
+2023-09-01 16:31:20.482282 [debug]: [GET], [/video/xxx.mp4], [1.1]
+2023-09-01 16:31:20.482329 [debug]: /video/xxx.mp4
+2023-09-01 16:31:20.482343 [debug]: file path /home/nanisha/Webserver/resources//video/xxx.mp4
+2023-09-01 16:31:20.482355 [debug]: filesize:39667571, 2  to 39667698
+2023-09-01 16:31:20.486588 [info] : Client[18] quit!
+2023-09-01 16:31:20.487100 [info] : Client[18](127.0.0.1:46258) quit, UserCount:0
+2023-09-01 16:31:20.743801 [info] : Client[18](127.0.0.1:46770) in, userCount:1
+2023-09-01 16:31:20.743918 [info] : Client[18] in!
+2023-09-01 16:31:20.748019 [info] : Client[18] quit!
+2023-09-01 16:31:20.748131 [info] : Client[18](127.0.0.1:46770) quit, UserCount:0
+2023-09-01 16:31:21.256654 [info] : Client[18](127.0.0.1:47282) in, userCount:1
+2023-09-01 16:31:21.256730 [info] : Client[18] in!
+2023-09-01 16:31:21.257223 [debug]: [GET], [/video/xxx.mp4], [1.1]
+2023-09-01 16:31:21.257366 [debug]: /video/xxx.mp4
+2023-09-01 16:31:21.257425 [debug]: file path /home/nanisha/Webserver/resources//video/xxx.mp4
+2023-09-01 16:31:21.257443 [debug]: filesize:39667571, 2  to 39667698
+2023-09-01 16:31:21.261633 [info] : Client[18] quit!
+2023-09-01 16:31:21.261918 [info] : Client[18](127.0.0.1:47282) quit, UserCount:0
+2023-09-01 16:31:21.521624 [info] : Client[18](127.0.0.1:47794) in, userCount:1
+2023-09-01 16:31:21.521714 [info] : Client[18] in!
+2023-09-01 16:31:21.525830 [info] : Client[18] quit!
+2023-09-01 16:31:21.525933 [info] : Client[18](127.0.0.1:47794) quit, UserCount:0
+2023-09-01 16:31:22.076938 [info] : Client[18](127.0.0.1:48306) in, userCount:1
+2023-09-01 16:31:22.077013 [info] : Client[18] in!
+2023-09-01 16:31:22.077551 [debug]: [GET], [/video/xxx.mp4], [1.1]
+2023-09-01 16:31:22.077601 [debug]: /video/xxx.mp4
+2023-09-01 16:31:22.077617 [debug]: file path /home/nanisha/Webserver/resources//video/xxx.mp4
+2023-09-01 16:31:22.077629 [debug]: filesize:39667571, 2  to 39667698
+2023-09-01 16:31:22.081823 [info] : Client[18] quit!
+2023-09-01 16:31:22.082128 [info] : Client[18](127.0.0.1:48306) quit, UserCount:0
+2023-09-01 16:31:22.338033 [info] : Client[18](127.0.0.1:48818) in, userCount:1
+2023-09-01 16:31:22.338182 [info] : Client[18] in!
+2023-09-01 16:31:22.342380 [info] : Client[18] quit!
+2023-09-01 16:31:22.342495 [info] : Client[18](127.0.0.1:48818) quit, UserCount:0
+2023-09-01 16:31:22.974601 [info] : Client[18](127.0.0.1:49330) in, userCount:1
+2023-09-01 16:31:22.974779 [info] : Client[18] in!
+2023-09-01 16:31:22.975479 [debug]: [GET], [/video/xxx.mp4], [1.1]
+2023-09-01 16:31:22.975556 [debug]: /video/xxx.mp4
+2023-09-01 16:31:22.975577 [debug]: file path /home/nanisha/Webserver/resources//video/xxx.mp4
+2023-09-01 16:31:22.975598 [debug]: filesize:39667571, 2  to 39667698
+2023-09-01 16:31:22.979787 [info] : Client[18] quit!
+2023-09-01 16:31:22.980342 [info] : Client[18](127.0.0.1:49330) quit, UserCount:0
+2023-09-01 16:31:23.238979 [info] : Client[18](127.0.0.1:49842) in, userCount:1
+2023-09-01 16:31:23.239100 [info] : Client[18] in!
+2023-09-01 16:31:23.243386 [info] : Client[18] quit!
+2023-09-01 16:31:23.243563 [info] : Client[18](127.0.0.1:49842) quit, UserCount:0
+2023-09-01 16:31:23.911720 [info] : Client[18](127.0.0.1:50354) in, userCount:1
+2023-09-01 16:31:23.911858 [info] : Client[18] in!
+2023-09-01 16:31:23.912422 [debug]: [GET], [/video/xxx.mp4], [1.1]
+2023-09-01 16:31:23.912468 [debug]: /video/xxx.mp4
+2023-09-01 16:31:23.912482 [debug]: file path /home/nanisha/Webserver/resources//video/xxx.mp4
+2023-09-01 16:31:23.912494 [debug]: filesize:39667571, 2  to 39667698
+2023-09-01 16:31:23.916701 [info] : Client[18] quit!
+2023-09-01 16:31:23.917087 [info] : Client[18](127.0.0.1:50354) quit, UserCount:0
+2023-09-01 16:31:24.170531 [info] : Client[18](127.0.0.1:50866) in, userCount:1
+2023-09-01 16:31:24.170694 [info] : Client[18] in!
+2023-09-01 16:31:24.174875 [info] : Client[18] quit!
+2023-09-01 16:31:24.175024 [info] : Client[18](127.0.0.1:50866) quit, UserCount:0
+2023-09-01 16:31:24.935597 [info] : Client[18](127.0.0.1:51378) in, userCount:1
+2023-09-01 16:31:24.935698 [info] : Client[18] in!
+2023-09-01 16:31:24.936215 [debug]: [GET], [/video/xxx.mp4], [1.1]
+2023-09-01 16:31:24.936274 [debug]: /video/xxx.mp4
+2023-09-01 16:31:24.936297 [debug]: file path /home/nanisha/Webserver/resources//video/xxx.mp4
+2023-09-01 16:31:24.936340 [debug]: filesize:39667571, 2  to 39667698
+2023-09-01 16:31:24.942024 [info] : Client[18] quit!
+2023-09-01 16:31:24.942412 [info] : Client[18](127.0.0.1:51378) quit, UserCount:0
+2023-09-01 16:31:25.196949 [info] : Client[18](127.0.0.1:51890) in, userCount:1
+2023-09-01 16:31:25.197029 [info] : Client[18] in!
+2023-09-01 16:31:25.201142 [info] : Client[18] quit!
+2023-09-01 16:31:25.201244 [info] : Client[18](127.0.0.1:51890) quit, UserCount:0
+2023-09-01 16:31:25.949506 [info] : Client[18](127.0.0.1:52402) in, userCount:1
+2023-09-01 16:31:25.949599 [info] : Client[18] in!
+2023-09-01 16:31:25.950128 [debug]: [GET], [/video/xxx.mp4], [1.1]
+2023-09-01 16:31:25.950186 [debug]: /video/xxx.mp4
+2023-09-01 16:31:25.950204 [debug]: file path /home/nanisha/Webserver/resources//video/xxx.mp4
+2023-09-01 16:31:25.950220 [debug]: filesize:39667571, 2  to 39667698
+2023-09-01 16:31:25.954491 [info] : Client[18] quit!
+2023-09-01 16:31:25.954935 [info] : Client[18](127.0.0.1:52402) quit, UserCount:0
+2023-09-01 16:31:26.205037 [info] : Client[18](127.0.0.1:52914) in, userCount:1
+2023-09-01 16:31:26.205145 [info] : Client[18] in!
+2023-09-01 16:31:26.209303 [info] : Client[18] quit!
+2023-09-01 16:31:26.209413 [info] : Client[18](127.0.0.1:52914) quit, UserCount:0
+2023-09-01 16:31:27.321067 [info] : Client[18](127.0.0.1:53426) in, userCount:1
+2023-09-01 16:31:27.321166 [info] : Client[18] in!
+2023-09-01 16:31:27.321728 [debug]: [GET], [/video/xxx.mp4], [1.1]
+2023-09-01 16:31:27.321790 [debug]: /video/xxx.mp4
+2023-09-01 16:31:27.321810 [debug]: file path /home/nanisha/Webserver/resources//video/xxx.mp4
+2023-09-01 16:31:27.321859 [debug]: filesize:39667571, 2  to 39667698
+2023-09-01 16:31:27.326064 [info] : Client[18] quit!
+2023-09-01 16:31:27.326467 [info] : Client[18](127.0.0.1:53426) quit, UserCount:0
+2023-09-01 16:33:19.622479 [info] : ========== Server init ==========
+2023-09-01 16:33:19.622486 [info] : Port:1316, OpenLinger: false
+2023-09-01 16:33:19.622488 [info] : Listen Mode: ET, OpenConn Mode: ET
+2023-09-01 16:33:19.622490 [info] : LogSys level: 0
+2023-09-01 16:33:19.622492 [info] : srcDir: /home/nanisha/Webserver/resources/
+2023-09-01 16:33:19.622494 [info] : SqlConnPool num: 12, ThreadPool num: 6
+2023-09-01 16:33:19.622496 [info] : ========== Server start ==========
+2023-09-01 16:33:24.492493 [info] : Client[18](127.0.0.1:61106) in, userCount:1
+2023-09-01 16:33:24.492624 [info] : Client[18] in!
+2023-09-01 16:33:24.492659 [info] : Client[19](127.0.0.1:61618) in, userCount:2
+2023-09-01 16:33:24.492686 [info] : Client[19] in!
+2023-09-01 16:33:24.493316 [debug]: [GET], [/video.html], [1.1]
+2023-09-01 16:33:24.493365 [debug]: /video.html
+2023-09-01 16:33:24.493385 [debug]: file path /home/nanisha/Webserver/resources//video.html
+2023-09-01 16:33:24.493423 [debug]: filesize:3347, 2  to 3469
+2023-09-01 16:33:24.505126 [debug]: [GET], [/css/bootstrap.min.css], [1.1]
+2023-09-01 16:33:24.505360 [debug]: /css/bootstrap.min.css
+2023-09-01 16:33:24.505480 [debug]: file path /home/nanisha/Webserver/resources//css/bootstrap.min.css
+2023-09-01 16:33:24.505525 [debug]: filesize:121260, 2  to 121384
+2023-09-01 16:33:24.507362 [debug]: [GET], [/css/animate.css], [1.1]
+2023-09-01 16:33:24.507720 [debug]: /css/animate.css
+2023-09-01 16:33:24.507780 [debug]: file path /home/nanisha/Webserver/resources//css/animate.css
+2023-09-01 16:33:24.507827 [debug]: filesize:72922, 2  to 73045
+2023-09-01 16:33:24.509939 [debug]: [GET], [/css/magnific-popup.css], [1.1]
+2023-09-01 16:33:24.510051 [debug]: /css/magnific-popup.css
+2023-09-01 16:33:24.510112 [debug]: file path /home/nanisha/Webserver/resources//css/magnific-popup.css
+2023-09-01 16:33:24.510150 [debug]: filesize:6951, 2  to 7073
+2023-09-01 16:33:24.512679 [debug]: [GET], [/css/font-awesome.min.css], [1.1]
+2023-09-01 16:33:24.512770 [debug]: /css/font-awesome.min.css
+2023-09-01 16:33:24.512865 [debug]: file path /home/nanisha/Webserver/resources//css/font-awesome.min.css
+2023-09-01 16:33:24.512910 [debug]: filesize:27392, 2  to 27515
+2023-09-01 16:33:24.516117 [debug]: [GET], [/css/style.css], [1.1]
+2023-09-01 16:33:24.516366 [debug]: /css/style.css
+2023-09-01 16:33:24.516480 [debug]: file path /home/nanisha/Webserver/resources//css/style.css
+2023-09-01 16:33:24.516545 [debug]: filesize:9807, 2  to 9929
+2023-09-01 16:33:24.519014 [debug]: [GET], [/js/jquery.js], [1.1]
+2023-09-01 16:33:24.519358 [debug]: /js/jquery.js
+2023-09-01 16:33:24.519454 [debug]: file path /home/nanisha/Webserver/resources//js/jquery.js
+2023-09-01 16:33:24.519507 [debug]: filesize:85658, 2  to 85788
+2023-09-01 16:33:24.523318 [debug]: [GET], [/images/profile-image.jpg], [1.1]
+2023-09-01 16:33:24.523502 [debug]: /images/profile-image.jpg
+2023-09-01 16:33:24.523583 [debug]: file path /home/nanisha/Webserver/resources//images/profile-image.jpg
+2023-09-01 16:33:24.523631 [debug]: filesize:47176, 2  to 47300
+2023-09-01 16:33:24.525045 [debug]: [GET], [/js/bootstrap.min.js], [1.1]
+2023-09-01 16:33:24.525319 [debug]: /js/bootstrap.min.js
+2023-09-01 16:33:24.525411 [debug]: file path /home/nanisha/Webserver/resources//js/bootstrap.min.js
+2023-09-01 16:33:24.525522 [debug]: filesize:36868, 2  to 36998
+2023-09-01 16:33:24.530619 [debug]: [GET], [/js/smoothscroll.js], [1.1]
+2023-09-01 16:33:24.530711 [debug]: /js/smoothscroll.js
+2023-09-01 16:33:24.530746 [debug]: [GET], [/js/jquery.magnific-popup.min.js], [1.1]
+2023-09-01 16:33:24.530803 [debug]: file path /home/nanisha/Webserver/resources//js/smoothscroll.js
+2023-09-01 16:33:24.530922 [debug]: filesize:4474, 2  to 4603
+2023-09-01 16:33:24.530963 [debug]: /js/jquery.magnific-popup.min.js
+2023-09-01 16:33:24.531066 [debug]: file path /home/nanisha/Webserver/resources//js/jquery.magnific-popup.min.js
+2023-09-01 16:33:24.531112 [debug]: filesize:20932, 2  to 21062
+2023-09-01 16:33:24.536185 [debug]: [GET], [/js/magnific-popup-options.js], [1.1]
+2023-09-01 16:33:24.536541 [debug]: [GET], [/js/wow.min.js], [1.1]
+2023-09-01 16:33:24.536577 [debug]: /js/magnific-popup-options.js
+2023-09-01 16:33:24.536968 [debug]: /js/wow.min.js
+2023-09-01 16:33:24.537160 [debug]: file path /home/nanisha/Webserver/resources//js/wow.min.js
+2023-09-01 16:33:24.537214 [debug]: file path /home/nanisha/Webserver/resources//js/magnific-popup-options.js
+2023-09-01 16:33:24.537245 [debug]: filesize:1069, 2  to 1198
+2023-09-01 16:33:24.537245 [debug]: filesize:7082, 2  to 7211
+2023-09-01 16:33:24.541430 [debug]: [GET], [/js/custom.js], [1.1]
+2023-09-01 16:33:24.541481 [debug]: /js/custom.js
+2023-09-01 16:33:24.541513 [debug]: file path /home/nanisha/Webserver/resources//js/custom.js
+2023-09-01 16:33:24.541524 [debug]: filesize:1047, 2  to 1176
+2023-09-01 16:33:24.541717 [debug]: [GET], [/video/xxx.mp4], [1.1]
+2023-09-01 16:33:24.542045 [debug]: /video/xxx.mp4
+2023-09-01 16:33:24.542188 [debug]: file path /home/nanisha/Webserver/resources//video/xxx.mp4
+2023-09-01 16:33:24.542317 [debug]: filesize:39667571, 2  to 39667698
+2023-09-01 16:33:24.738936 [info] : Client[20](127.0.0.1:62130) in, userCount:3
+2023-09-01 16:33:24.739161 [info] : Client[20] in!
+2023-09-01 16:33:24.811485 [info] : Client[21](127.0.0.1:62642) in, userCount:4
+2023-09-01 16:33:24.811774 [info] : Client[21] in!
+2023-09-01 16:33:24.812213 [info] : Client[22](127.0.0.1:63154) in, userCount:5
+2023-09-01 16:33:24.812513 [info] : Client[22] in!
+2023-09-01 16:33:24.813795 [info] : Client[23](127.0.0.1:63666) in, userCount:6

@@ -21,9 +21,11 @@ WebServer::WebServer(
     strncat(srcDir_, "/resources/", 16);
     HttpConn::userCount = 0;
     HttpConn::srcDir = srcDir_;
+    // 初始化数据库连接
     SqlConnPool::Instance()->Init("127.0.0.1", sqlPort, sqlUser, sqlPwd, dbName, connPoolNum);
 
     InitEventMode_(trigMode);
+    // 创建监听 listenfd_, 添加到epoll监听中
     if(!InitSocket_()) { isClose_ = true;}
 
     if(openLog) {
@@ -79,7 +81,7 @@ void WebServer::Start() {
     if(!isClose_) { LOG_INFO("========== Server start =========="); }
     while(!isClose_) {
         if(timeoutMS_ > 0) {
-            timeMS = timer_->GetNextTick();
+            timeMS = timer_->GetNextTick(); // timeMS == 0 超时了 timeMS > 0 未到时
         }
         int eventCnt = epoller_->Wait(timeMS);
         for(int i = 0; i < eventCnt; i++) {
@@ -123,6 +125,7 @@ void WebServer::CloseConn_(HttpConn* client) {
     client->Close();
 }
 
+// 创建http客户连接
 void WebServer::AddClient_(int fd, sockaddr_in addr) {
     assert(fd > 0);
     users_[fd].init(fd, addr);
@@ -138,6 +141,7 @@ void WebServer::DealListen_() {
     struct sockaddr_in addr;
     socklen_t len = sizeof(addr);
     do {
+        // 创建新的连接
         int fd = accept(listenFd_, (struct sockaddr *)&addr, &len);
         if(fd <= 0) { return;}
         else if(HttpConn::userCount >= MAX_FD) {
